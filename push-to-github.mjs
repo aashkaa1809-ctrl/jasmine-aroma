@@ -68,6 +68,16 @@ async function run() {
     return;
   }
 
+  console.log('Ensuring branch is main...');
+  try {
+    await git.branch({ fs, dir, ref: 'main', checkout: true });
+  } catch (e) {
+    // ignore if already main
+  }
+
+  const currentBranch = await git.currentBranch({ fs, dir }) || 'main';
+  console.log(`Current branch: ${currentBranch}`);
+
   console.log(`Pushing to ${remoteUrl}...`);
   const pushResult = await git.push({
     fs,
@@ -75,7 +85,7 @@ async function run() {
     dir,
     remote: 'origin',
     url: remoteUrl,
-    ref: 'main',
+    ref: currentBranch,
     force: true,
     onAuth: () => ({ username: token })
   });
