@@ -27,7 +27,7 @@ export interface Product {
   originalPrice?: number;
   rating: number;
   reviewCount: number;
-  badge?: 'Signature' | 'Best Seller' | 'New Season' | 'Organic Luxury' | 'Cloud Soft';
+  badge?: 'Signature' | 'Best Seller' | 'New Season' | 'Organic Luxury' | 'Cloud Soft' | 'Cloud Loft';
   images: string[];
   colors?: { name: string; hex: string; inStock: boolean }[];
   sizes?: { name: string; dimensions: string; price: number }[];

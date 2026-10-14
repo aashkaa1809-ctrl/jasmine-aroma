@@ -14,7 +14,7 @@ export const StorySection: React.FC = () => {
           <div className="lg:col-span-6 relative">
             <div className="relative aspect-[4/5] rounded-sm overflow-hidden border border-white/10 shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=1200&auto=format&fit=crop"
+                src="/assets/lifestyle/living-room-editorial.jpg"
                 alt="Jasmine Aroma Weave and Organic Fabric Detail"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

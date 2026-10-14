@@ -19,7 +19,7 @@ export const Hero: React.FC = () => {
       {/* Background Lifestyle Image with Subtle Cinematic Zoom */}
       <div className="absolute inset-0 z-0 select-none">
         <Image
-          src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=2000&auto=format&fit=crop"
+          src="/assets/lifestyle/home-styling-sanctuary.jpg"
           alt="Jasmine Aroma Luxury Bedroom Interior"
           fill
           priority

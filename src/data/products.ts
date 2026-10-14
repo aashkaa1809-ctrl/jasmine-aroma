@@ -4,12 +4,12 @@ export const PRODUCTS: Product[] = [
   // Bedsheets
   {
     id: 'bs-01',
-    name: '500TC Organic Sateen Sheet Set',
-    slug: '500tc-organic-sateen-sheet-set',
+    name: 'Luxury White Hand Block Printed Bedsheet Set',
+    slug: 'luxury-white-hand-block-printed-bedsheet-set',
     category: 'bedsheets',
     categoryName: 'Luxury Bedsheets',
-    tagline: 'Luminous drape with a silk-like hand feel for restorative nights.',
-    description: 'Woven from handpicked long-staple organic cotton yarns with a four-over-one sateen structure. Breathable, sumptuous, and designed to drape effortlessly over deep pillow-top mattresses.',
+    tagline: 'Luminous drape with artisanal hand block printing for restful nights.',
+    description: 'Woven from handpicked long-staple organic cotton yarns with traditional hand block botanical printing. Breathable, sumptuous, and designed to drape effortlessly over deep pillow-top mattresses.',
     price: 4999,
     originalPrice: 6499,
     rating: 4.9,
@@ -18,15 +18,14 @@ export const PRODUCTS: Product[] = [
     featured: true,
     inStock: true,
     images: [
-      'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=1200&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?q=80&w=1200&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=1200&auto=format&fit=crop'
+      '/assets/products/bedsheet-luxury-white.jpg',
+      '/assets/products/bedsheet-block-print.jpg',
+      '/assets/products/bedsheet-aesthetic-beige.jpg'
     ],
     colors: [
       { name: 'Sanctuary Ivory', hex: '#FAF5EC', inStock: true },
       { name: 'Warm Cashmere', hex: '#E2D7C8', inStock: true },
-      { name: 'Misty Sage', hex: '#9CA894', inStock: true },
-      { name: 'Midnight Charcoal', hex: '#1F1F1F', inStock: true }
+      { name: 'Misty Sage', hex: '#9CA894', inStock: true }
     ],
     sizes: [
       { name: 'Queen Set (90" x 102")', dimensions: 'Fitted Sheet + Flat Sheet + 2 Pillowcases', price: 4499 },
@@ -35,32 +34,32 @@ export const PRODUCTS: Product[] = [
     ],
     specifications: {
       material: '100% GOTS Certified Organic Long-Staple Cotton',
-      weave: 'Lustrous Sateen Weave',
+      weave: 'Hand Block Printed Cotton Weave',
       threadCount: '500 Thread Count (Single-Ply)',
       pocketDepth: '18" Deep Pockets with 360° Elastic Band',
       certifications: ['GOTS Certified Organic', 'OEKO-TEX Standard 100 Class 1'],
-      countryOfOrigin: 'Crafted with master weavers in India & Portugal',
+      countryOfOrigin: 'Crafted with master artisanal weavers in India',
       careInstructions: [
         'Machine wash cold on gentle cycle with plant-based detergent',
         'Tumble dry low or line dry in the shade',
         'Warm iron if desired while slightly damp'
       ]
     },
-    story: 'We selected single-ply yarns from certified organic cultivars to provide the natural lustre of silk combined with the breathability of pure cotton.',
+    story: 'We selected single-ply organic cotton yarns and heritage block printing artisans to create enduring textile beauty with natural botanical dyes.',
     highlights: [
-      'Four-over-one weave creates a gentle silky sheen',
-      'Resistant to pilling and friction even after 100+ washes',
+      'Authentic hand block artisan printing',
+      'Ultra-breathable long-staple cotton matrix',
       'Includes envelope closure on pillowcases to keep inserts hidden'
     ]
   },
   {
     id: 'bs-02',
-    name: 'Crisp Hotel Percale Sheet Set',
-    slug: 'crisp-hotel-percale-sheet-set',
+    name: 'Block Printed Cotton Double Bedsheet 3-Piece Set',
+    slug: 'block-printed-cotton-double-bedsheet-set',
     category: 'bedsheets',
     categoryName: 'Luxury Bedsheets',
-    tagline: 'Cool-to-the-touch, matte finish reminiscent of five-star Mediterranean villas.',
-    description: 'Engineered for warm sleepers and lovers of crisp, hotel-grade cotton. Classic one-over-one percale weave promotes continuous airflow for undisturbed, temperate sleep.',
+    tagline: 'Timeless floral block print with matching tailored pillow shams.',
+    description: 'Engineered for warm sleepers and lovers of crisp, hotel-grade breathable cotton. Features hand block florals and two tailored matching pillow shams.',
     price: 4299,
     originalPrice: 5299,
     rating: 4.8,
@@ -69,58 +68,57 @@ export const PRODUCTS: Product[] = [
     featured: true,
     inStock: true,
     images: [
-      'https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?q=80&w=1200&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=1200&auto=format&fit=crop'
+      '/assets/products/bedsheet-block-print.jpg',
+      '/assets/products/bedsheet-luxury-white.jpg'
     ],
     colors: [
-      { name: 'Optical White', hex: '#FFFFFF', inStock: true },
-      { name: 'French Sand', hex: '#EAE5D9', inStock: true },
-      { name: 'Pale Stone', hex: '#D2CEC4', inStock: true }
+      { name: 'Heritage Indigo & Cream', hex: '#3B4D61', inStock: true },
+      { name: 'Earthy Ochre', hex: '#C59B27', inStock: true }
     ],
     sizes: [
-      { name: 'Queen Set (90" x 102")', dimensions: 'Fitted + Flat + 2 Pillowcases', price: 3999 },
-      { name: 'King Set (108" x 102")', dimensions: 'Fitted + Flat + 2 Pillowcases', price: 4299 }
+      { name: 'Double Set (90" x 100")', dimensions: 'Bedsheet + 2 Pillow Shams', price: 3999 },
+      { name: 'King Set (108" x 102")', dimensions: 'Bedsheet + 2 Pillow Shams', price: 4299 }
     ],
     specifications: {
-      material: '100% Long-Staple Combed Cotton',
-      weave: 'One-Over-One Crisp Percale',
+      material: '100% Pure Combed Cotton',
+      weave: 'Artisanal Block Weave',
       threadCount: '400 Thread Count',
       pocketDepth: '16" Mattress Pocket',
       certifications: ['OEKO-TEX Standard 100'],
       careInstructions: ['Wash warm, tumble dry gentle, warm iron']
     },
-    highlights: ['Exceptional breathability', 'Crisp tactile texture', 'Zero synthetic blends']
+    highlights: ['Exceptional breathability', 'Rich vegetable-based colors', 'Zero synthetic blends']
   },
   {
     id: 'bs-03',
-    name: 'Botanical Jacquard Pure Cotton Set',
-    slug: 'botanical-jacquard-pure-cotton-set',
+    name: 'Aesthetic Beige Minimalist Bedsheet Set',
+    slug: 'aesthetic-beige-minimalist-bedsheet-set',
     category: 'bedsheets',
     categoryName: 'Luxury Bedsheets',
-    tagline: 'Subtle tone-on-tone botanical motif woven directly into the heirloom fabric.',
-    description: 'A masterpiece of jacquard loom artistry. Delicate jasmine petal outlines are woven directly into the organic cotton matrix, creating sensory depth and an exquisite bedroom focal point.',
-    price: 5799,
-    originalPrice: 7299,
+    tagline: 'Understated Scandinavian minimalism for cozy bedroom sanctuaries.',
+    description: 'Designed for lovers of calming neutral palettes. The soft beige tones create an effortless zen atmosphere that invites restorative sleep.',
+    price: 3899,
+    originalPrice: 4799,
     rating: 5.0,
     reviewCount: 63,
     badge: 'Organic Luxury',
     featured: false,
     inStock: true,
     images: [
-      'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=1200&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=1200&auto=format&fit=crop'
+      '/assets/products/bedsheet-aesthetic-beige.jpg',
+      '/assets/products/bedsheet-luxury-white.jpg'
     ],
     colors: [
-      { name: 'Pearl Jasmine', hex: '#F7F4EC', inStock: true },
-      { name: 'Smoky Taupe', hex: '#B8ABA0', inStock: true }
+      { name: 'Aesthetic Beige', hex: '#E6DEC9', inStock: true },
+      { name: 'Pale Stone', hex: '#D2CEC4', inStock: true }
     ],
     sizes: [
-      { name: 'King Set (108" x 102")', dimensions: 'Fitted + Flat + 2 Pillowcases', price: 5799 },
-      { name: 'Super King (114" x 108")', dimensions: 'Fitted + Flat + 2 Pillowcases', price: 6299 }
+      { name: 'King Set (108" x 102")', dimensions: 'Fitted + Flat + 2 Pillowcases', price: 3899 },
+      { name: 'Super King (114" x 108")', dimensions: 'Fitted + Flat + 2 Pillowcases', price: 4399 }
     ],
     specifications: {
-      material: '100% Organic Jacquard Combed Cotton',
-      weave: 'Artisanal Jacquard Weave',
+      material: '100% Organic Pure Cotton',
+      weave: 'Sateen Matte Finish',
       threadCount: '450 Thread Count',
       pocketDepth: '18" Deep Pocket',
       certifications: ['GOTS Certified', 'OEKO-TEX Standard 100']
@@ -130,12 +128,12 @@ export const PRODUCTS: Product[] = [
   // Comforters
   {
     id: 'cm-01',
-    name: 'Cloud All-Season Comforter',
-    slug: 'cloud-all-season-comforter',
+    name: 'Cozy 7-Piece All-Season Comforter Set',
+    slug: 'cozy-7-piece-comforter-set',
     category: 'comforters',
     categoryName: 'Plush Comforters',
-    tagline: 'Weightless warmth that adapts to your body temperature through all 4 seasons.',
-    description: 'Engineered with boxed baffle-wall chambers that lock the micro-cloud fiber clusters evenly across the quilt. Enclosed in a 400TC organic sateen casing with piped satin edges.',
+    tagline: 'Complete bedroom refresh with all-season temperature-balancing loft.',
+    description: 'Engineered with boxed baffle-wall chambers that lock the micro-cloud fiber clusters evenly across the quilt. Includes full comforter, matching shams, and decorative accents.',
     price: 6999,
     originalPrice: 8999,
     rating: 4.9,
@@ -144,99 +142,68 @@ export const PRODUCTS: Product[] = [
     featured: true,
     inStock: true,
     images: [
-      'https://images.unsplash.com/photo-1616046229478-9901c5536a45?q=80&w=1200&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1540518614846-7ede433c4550?q=80&w=1200&auto=format&fit=crop'
+      '/assets/products/comforter-cozy-refresh.jpg',
+      '/assets/products/comforter-cream-plush.jpg'
     ],
     colors: [
-      { name: 'Pure Cloud White', hex: '#FFFFFF', inStock: true },
-      { name: 'Oatmeal Natural', hex: '#EBE5DA', inStock: true }
+      { name: 'Slate Charcoal & White', hex: '#2A2E33', inStock: true },
+      { name: 'Pure Cloud White', hex: '#FFFFFF', inStock: true }
     ],
     sizes: [
-      { name: 'Queen (90" x 90")', dimensions: 'All-Season Loft 350 GSM', price: 6499 },
-      { name: 'King (104" x 92")', dimensions: 'All-Season Loft 350 GSM', price: 6999 }
+      { name: 'Queen 7-Piece Set (90" x 90")', dimensions: 'Full Ensemble with Shams', price: 6499 },
+      { name: 'King 7-Piece Set (104" x 92")', dimensions: 'Full Ensemble with Shams', price: 6999 }
     ],
     specifications: {
-      material: '400TC Organic Cotton Sateen Shell',
+      material: '400TC Organic Cotton Shell',
       fill: 'Hypoallergenic Virgin Micro-Cloud Fiber Clusters (350 GSM)',
       weave: 'Boxed Baffle-Box Stitching',
       certifications: ['OEKO-TEX Standard 100 Class 1', 'Hypoallergenic Certified'],
       careInstructions: ['Machine wash cold gentle, tumble dry low with dryer balls']
     },
-    highlights: ['Zero cold spots with 12" baffle boxes', '8 corner & side anchoring loops', 'Ultra-breathable shell']
+    highlights: ['Zero cold spots with 12" baffle boxes', 'Includes 7 curated bedding components', 'Ultra-breathable shell']
   },
   {
     id: 'cm-02',
-    name: 'Mulberry Silk Infused Duvet',
-    slug: 'mulberry-silk-infused-duvet',
+    name: 'Cream Ultra-Cozy Plush Comforter',
+    slug: 'cream-ultra-cozy-plush-comforter',
     category: 'comforters',
     categoryName: 'Plush Comforters',
-    tagline: 'Grade 6A Mulberry silk batting for the pinnacle of luxury thermal regulation.',
-    description: 'Long-strand natural mulberry silk hand-stretched and layered within a whisper-quiet organic cotton jacquard shell. Naturally hypoallergenic, dust-mite resistant, and moisture-wicking.',
-    price: 9499,
-    originalPrice: 11999,
+    tagline: 'Tactile plush warmth for the ultimate winter bedroom aesthetic.',
+    description: 'Buttery cream textures designed to envelop you in serene comfort. Cloud-like softness that transforms chilly evenings into indulgent retreats.',
+    price: 5999,
+    originalPrice: 7499,
     rating: 5.0,
     reviewCount: 82,
-    badge: 'Organic Luxury',
+    badge: 'Cloud Loft',
     featured: true,
     inStock: true,
     images: [
-      'https://images.unsplash.com/photo-1540518614846-7ede433c4550?q=80&w=1200&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1616046229478-9901c5536a45?q=80&w=1200&auto=format&fit=crop'
+      '/assets/products/comforter-cream-plush.jpg',
+      '/assets/products/comforter-cozy-refresh.jpg'
     ],
     colors: [
-      { name: 'Silk Pearl', hex: '#FAF7F0', inStock: true }
+      { name: 'Cream Velvet Cashmere', hex: '#F5EFE6', inStock: true }
     ],
     sizes: [
-      { name: 'King (104" x 92")', dimensions: 'Grade 6A Mulberry Silk 300 GSM', price: 9499 },
-      { name: 'Super King (110" x 98")', dimensions: 'Grade 6A Mulberry Silk 300 GSM', price: 10499 }
+      { name: 'Queen (90" x 90")', dimensions: '380 GSM Winter Warmth', price: 5499 },
+      { name: 'King (104" x 92")', dimensions: '380 GSM Winter Warmth', price: 5999 }
     ],
     specifications: {
-      material: '500TC Jacquard Shell',
-      fill: '100% Long-Strand Mulberry Silk (Grade 6A)',
-      certifications: ['OEKO-TEX Standard 100', 'OEKO-TEX Made in Green']
-    }
-  },
-  {
-    id: 'cm-03',
-    name: 'Artisan Channel-Stitched Quilt',
-    slug: 'artisan-channel-stitched-quilt',
-    category: 'comforters',
-    categoryName: 'Plush Comforters',
-    tagline: 'Linear channel quilting with vintage stone-washed texture.',
-    description: 'An essential layering piece for contemporary beds. Fluff-washed for instant lived-in comfort with modern minimalist horizontal channel quilting.',
-    price: 5499,
-    originalPrice: 6999,
-    rating: 4.8,
-    reviewCount: 71,
-    badge: 'New Season',
-    featured: false,
-    inStock: true,
-    images: [
-      'https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?q=80&w=1200&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1616046229478-9901c5536a45?q=80&w=1200&auto=format&fit=crop'
-    ],
-    colors: [
-      { name: 'Mineral Slate', hex: '#6F777B', inStock: true },
-      { name: 'Sand Dunes', hex: '#DED3C4', inStock: true }
-    ],
-    sizes: [
-      { name: 'King (102" x 90")', dimensions: '250 GSM Lightweight Quilt', price: 5499 }
-    ],
-    specifications: {
-      material: '100% Stone-Washed Cotton',
-      fill: 'Bonded Cotton/Microfiber Blend'
+      material: 'Velvety Micro-Plush Face with Organic Cotton Backing',
+      fill: 'Hypoallergenic Down-Alternative Fill',
+      certifications: ['OEKO-TEX Standard 100']
     }
   },
 
   // Cushion Covers
   {
     id: 'cc-01',
-    name: 'Belgian Textured Flax Linen Cushion Cover',
-    slug: 'belgian-textured-flax-linen-cushion-cover',
+    name: 'Artisanal Decorative Flax Pillow Covers',
+    slug: 'artisanal-decorative-flax-pillow-covers',
     category: 'cushion-covers',
     categoryName: 'Cushion Covers',
-    tagline: 'Raw-edged tactile richness in natural earthy tones.',
-    description: 'Spun from heavy French flax fibers with a distinct slub texture. Features an artisanal 1-inch tailored flange edge and a discreet hidden zipper closure on the back.',
+    tagline: 'Tactile slub linen shams with subtle piped flanged edges.',
+    description: 'Spun from heavy European flax fibers with a distinct textured hand-feel. Features tailored flange edges and concealed YKK zipper closures.',
     price: 1499,
     originalPrice: 1999,
     rating: 4.9,
@@ -245,19 +212,18 @@ export const PRODUCTS: Product[] = [
     featured: true,
     inStock: true,
     images: [
-      'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=1200&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=1200&auto=format&fit=crop'
+      '/assets/products/cushion-decorative-flax.jpg',
+      '/assets/products/cushion-boho-eclectic.jpg',
+      '/assets/products/cushion-colorful-velvet.jpg'
     ],
     colors: [
-      { name: 'Natural Flax', hex: '#D4C6B1', inStock: true },
+      { name: 'Natural Oatmeal', hex: '#D4C6B1', inStock: true },
       { name: 'Burnt Ochre', hex: '#B87A4F', inStock: true },
-      { name: 'Olive Grove', hex: '#68705C', inStock: true },
-      { name: 'Washed Charcoal', hex: '#2C2B2A', inStock: true }
+      { name: 'Olive Green', hex: '#68705C', inStock: true }
     ],
     sizes: [
       { name: 'Square 18" x 18" (45x45 cm)', dimensions: 'Set of 2 Covers', price: 1499 },
-      { name: 'Square 20" x 20" (50x50 cm)', dimensions: 'Set of 2 Covers', price: 1799 },
-      { name: 'Lumbar 14" x 24" (35x60 cm)', dimensions: 'Set of 2 Covers', price: 1599 }
+      { name: 'Square 20" x 20" (50x50 cm)', dimensions: 'Set of 2 Covers', price: 1799 }
     ],
     specifications: {
       material: '100% Certified European Flax Linen (320 GSM)',
@@ -269,75 +235,77 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'cc-02',
-    name: 'Botanical Jasmine Embroidered Cover',
-    slug: 'botanical-jasmine-embroidered-cover',
+    name: 'Boho Eclectic Textured Throw Cushion Cover',
+    slug: 'boho-eclectic-textured-throw-cushion-cover',
     category: 'cushion-covers',
     categoryName: 'Cushion Covers',
-    tagline: 'Hand-guided thread embroidery capturing delicate floral branches.',
-    description: 'Each piece is detailed with fine silk-finish thread embroidery over an ivory organic cotton-linen blend. Brings bespoke atelier craftsmanship into your living room.',
-    price: 1899,
-    originalPrice: 2499,
-    rating: 5.0,
-    reviewCount: 47,
+    tagline: 'Hand-knotted tufted motifs for curated living rooms.',
+    description: 'Brings tactile bohemian warmth into your seating sanctuary. Detailed with textural geometric loops and premium cotton backing.',
+    price: 1699,
+    originalPrice: 2299,
+    rating: 4.9,
+    reviewCount: 78,
     badge: 'Best Seller',
     featured: true,
     inStock: true,
     images: [
-      'https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=1200&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=1200&auto=format&fit=crop'
+      '/assets/products/cushion-boho-eclectic.jpg',
+      '/assets/products/cushion-decorative-flax.jpg'
     ],
     colors: [
-      { name: 'Ivory / Gold Leaf', hex: '#FAF4E8', inStock: true },
-      { name: 'Sage / Pale Silver', hex: '#C2CCC0', inStock: true }
+      { name: 'Ivory & Natural Taupe', hex: '#EBE3D5', inStock: true },
+      { name: 'Terracotta Rust', hex: '#A85A3C', inStock: true }
     ],
     sizes: [
-      { name: 'Square 18" x 18"', dimensions: 'Set of 2 Covers', price: 1899 },
-      { name: 'Square 20" x 20"', dimensions: 'Set of 2 Covers', price: 2199 }
+      { name: 'Square 18" x 18"', dimensions: 'Set of 2 Covers', price: 1699 },
+      { name: 'Lumbar 14" x 24"', dimensions: 'Set of 2 Covers', price: 1899 }
     ],
     specifications: {
-      material: '60% Organic Cotton, 40% Belgian Linen',
+      material: 'Tufted Cotton Chenille with Linen Base',
       closureType: 'Concealed Zipper'
     }
   },
   {
     id: 'cc-03',
-    name: 'Minimalist Matte Velvet Sham',
-    slug: 'minimalist-matte-velvet-sham',
+    name: 'Colorful Luxury Velvet Pillow Collection',
+    slug: 'colorful-luxury-velvet-pillow-collection',
     category: 'cushion-covers',
     categoryName: 'Cushion Covers',
-    tagline: 'Sumptuous short-pile cotton velvet with a modern matte finish.',
-    description: 'Rich, plush, and wonderfully tactile. Our matte cotton velvet catches ambient lighting softly without overly glossy reflections.',
-    price: 1699,
+    tagline: 'Vibrant jewel tones with short-pile matte velvet lustre.',
+    description: 'Add sophisticated chromatic pops to your sofas and beds. Lustrous cotton velvet that catches ambient light gracefully without harsh reflections.',
+    price: 1599,
     originalPrice: 2199,
     rating: 4.8,
-    reviewCount: 39,
+    reviewCount: 52,
     badge: 'New Season',
     featured: false,
     inStock: true,
     images: [
-      'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=1200&auto=format&fit=crop'
+      '/assets/products/cushion-colorful-velvet.jpg',
+      '/assets/products/cushion-decorative-flax.jpg'
     ],
     colors: [
-      { name: 'Obsidian Black', hex: '#111111', inStock: true },
-      { name: 'Warm Taupe', hex: '#8B7E74', inStock: true }
+      { name: 'Mustard Gold', hex: '#D4AF37', inStock: true },
+      { name: 'Emerald Velvet', hex: '#1B4D3E', inStock: true },
+      { name: 'Rust Sienna', hex: '#C04000', inStock: true }
     ],
     sizes: [
-      { name: 'Square 18" x 18"', dimensions: 'Set of 2 Covers', price: 1699 }
+      { name: 'Square 18" x 18"', dimensions: 'Set of 2 Covers', price: 1599 }
     ],
     specifications: {
-      material: '100% Cotton Velvet'
+      material: '100% Matte Cotton Velvet'
     }
   },
 
   // Curtains
   {
     id: 'ct-01',
-    name: 'Flax Linen Blackout Curtain Panel',
-    slug: 'flax-linen-blackout-curtain-panel',
+    name: 'Beige Pinch Pleat Classic Linen Curtains',
+    slug: 'beige-pinch-pleat-classic-linen-curtains',
     category: 'curtains',
     categoryName: 'Linen Curtains',
-    tagline: '100% light-blocking with the organic textured beauty of pure linen.',
-    description: 'Combines the relaxed luxury of French flax linen on the room-facing side with a hidden triple-pass thermal blackout backing. Insulates against summer heat, cold drafts, and morning sunlight.',
+    tagline: 'Tailored pinch pleats with elegant floor-to-ceiling puddling.',
+    description: 'Combines the relaxed beauty of French flax linen with tailored pinch-pleat headers. Delivers graceful architectural structure and thermal acoustic insulation.',
     price: 3899,
     originalPrice: 4999,
     rating: 4.9,
@@ -346,13 +314,12 @@ export const PRODUCTS: Product[] = [
     featured: true,
     inStock: true,
     images: [
-      'https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop'
+      '/assets/products/curtains-pinch-pleat-beige.jpg',
+      '/assets/products/curtains-elegant-modern.jpg'
     ],
     colors: [
-      { name: 'Warm Linen Ivory', hex: '#F0ECE1', inStock: true },
-      { name: 'Earthy Oatmeal', hex: '#D8CDBE', inStock: true },
-      { name: 'Deep Anthracite', hex: '#222222', inStock: true }
+      { name: 'Classic Warm Beige', hex: '#E3DAC9', inStock: true },
+      { name: 'Linen Ivory', hex: '#F0ECE1', inStock: true }
     ],
     sizes: [
       { name: '50" W x 84" L (Single Panel)', dimensions: 'Includes Drapery Hooks', price: 3499 },
@@ -361,55 +328,54 @@ export const PRODUCTS: Product[] = [
     ],
     specifications: {
       material: '100% European Flax Linen face with Thermal Triple-Pass Backing',
-      draperyHeading: '3-in-1 Header: Rod Pocket, Back Tab, & Pinch Pleat Hook belt',
+      draperyHeading: 'Pinch Pleat Header with Adjustable Hooks',
       gsm: '380 GSM Total Weight',
       certifications: ['OEKO-TEX Standard 100', 'Thermal Acoustic Certified'],
       careInstructions: ['Dry clean recommended or spot clean with damp cloth']
     },
-    highlights: ['100% Total Blackout Rating', 'Weighted hem for crisp, tailored fall', 'Reduces outside noise by up to 30%']
+    highlights: ['Tailored pinch-pleat heading', 'Weighted hem for crisp, tailored fall', 'Reduces outside glare by up to 100%']
   },
   {
     id: 'ct-02',
-    name: 'Airy Sheer Belgian Voile Drapes',
-    slug: 'airy-sheer-belgian-voile-drapes',
+    name: 'Modern Contrast Blackout Linen Drapes',
+    slug: 'modern-contrast-blackout-linen-drapes',
     category: 'curtains',
     categoryName: 'Linen Curtains',
-    tagline: 'Diffuses harsh sunlight into a warm, gentle cinematic glow.',
-    description: 'Light as a summer whisper. Woven with open-slub linen yarns that filter sunlight while maintaining daytime privacy and gentle airflow.',
-    price: 2699,
-    originalPrice: 3499,
-    rating: 4.8,
+    tagline: 'Bold contrast borders with deep serene blackout mood.',
+    description: 'Framed with dark architectural contrast borders to sculpt modern windows. Includes 100% thermal blackout backing for deep, undisturbed sleep.',
+    price: 4199,
+    originalPrice: 5399,
+    rating: 5.0,
     reviewCount: 96,
     badge: 'Best Seller',
     featured: true,
     inStock: true,
     images: [
-      'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop'
+      '/assets/products/curtains-elegant-modern.jpg',
+      '/assets/products/curtains-pinch-pleat-beige.jpg'
     ],
     colors: [
-      { name: 'Pure White', hex: '#FFFFFF', inStock: true },
-      { name: 'Chalk Ivory', hex: '#F9F7F1', inStock: true }
+      { name: 'Oatmeal & Charcoal Border', hex: '#333333', inStock: true }
     ],
     sizes: [
-      { name: '50" W x 84" L', dimensions: 'Single Panel with Rod Pocket', price: 2299 },
-      { name: '50" W x 96" L', dimensions: 'Single Panel with Rod Pocket', price: 2699 }
+      { name: '50" W x 84" L', dimensions: 'Single Panel with Hooks', price: 3799 },
+      { name: '50" W x 96" L', dimensions: 'Single Panel with Hooks', price: 4199 }
     ],
     specifications: {
-      material: '100% Open-Weave Flax Voile',
-      draperyHeading: 'Rod Pocket & Back Tab'
+      material: '100% Linen with Blackout Liner',
+      draperyHeading: '3-in-1 Rod Pocket & Back Tab'
     }
   },
 
   // Soft Toys
   {
     id: 'st-01',
-    name: 'Celestial Cloud-Soft Bunny Companion',
-    slug: 'celestial-cloud-soft-bunny-companion',
+    name: 'Adorable Soft Koala Nursery Plush',
+    slug: 'adorable-soft-koala-nursery-plush',
     category: 'soft-toys',
     categoryName: 'Soft Toys',
-    tagline: 'Heirloom nursery companion in ultra-soft organic cotton velour.',
-    description: 'Designed to be a cherished forever friend. Meticulously handcrafted from buttery-soft organic cotton velour with hand-embroidered facial details for absolute infant safety.',
+    tagline: 'Cloud-soft heirloom animal companion in baby-safe velour.',
+    description: 'Designed to be a cherished bedtime friend. Handcrafted from buttery-soft hypoallergenic velour with hand-embroidered facial details for absolute infant safety.',
     price: 1899,
     originalPrice: 2299,
     rating: 5.0,
@@ -418,52 +384,81 @@ export const PRODUCTS: Product[] = [
     featured: true,
     inStock: true,
     images: [
-      'https://images.unsplash.com/photo-1558877385-81a1c7e67d72?q=80&w=1200&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1533738363-b7f9aef128ce?q=80&w=1200&auto=format&fit=crop'
+      '/assets/products/toys-koala-plush.jpg',
+      '/assets/products/toys-celestial-companions.jpg'
     ],
     colors: [
-      { name: 'Honey Oat', hex: '#E0D4C3', inStock: true },
-      { name: 'Powder Cloud', hex: '#F4EFE6', inStock: true }
+      { name: 'Gentle Koala Grey', hex: '#B8B5B0', inStock: true }
     ],
     sizes: [
-      { name: 'Standard Heirloom (14" Tall)', dimensions: 'Suitable from 0+ months', price: 1899 }
+      { name: 'Heirloom Huggable (14" Tall)', dimensions: 'Suitable from 0+ months', price: 1899 }
     ],
     specifications: {
-      material: '100% GOTS Certified Organic Cotton Velour',
+      material: '100% GOTS Certified Organic Cotton Velour Shell',
       fill: 'Hypoallergenic Virgin Recycled Polyfill',
-      certifications: ['EN71 Toy Safety Certified', 'ASTM F963 Safe', 'GOTS Organic'],
+      certifications: ['EN71 Toy Safety Certified', 'ASTM F963 Safe'],
       careInstructions: ['Machine wash gentle in laundry bag, air dry flat']
     },
     highlights: ['Zero hard plastic eyes or buttons', 'Safe from newborn age (0+)', 'Comes in a keepsake cotton drawstring pouch']
   },
   {
     id: 'st-02',
-    name: 'Gentle Elephant Sleep Huggable',
-    slug: 'gentle-elephant-sleep-huggable',
+    name: 'Aesthetic Avocado Soft Doll Companion',
+    slug: 'aesthetic-avocado-soft-doll-companion',
     category: 'soft-toys',
     categoryName: 'Soft Toys',
-    tagline: 'An adorable calming plush with gentle weighted base for soothing sleep.',
-    description: 'Designed with long floppy ears and a soft huggable shape. The calming botanical washed organic fabric makes bedtime a cozy, comforting ritual.',
-    price: 2199,
-    originalPrice: 2799,
+    tagline: 'Whimsical aesthetic bedroom and nursery cuddle friend.',
+    description: 'Whimsical, charming, and cloud-soft. Designed with delicate smiling embroidery and weighted base for cozy bedroom shelves and bedtime cuddles.',
+    price: 1499,
+    originalPrice: 1999,
     rating: 4.9,
-    reviewCount: 54,
+    reviewCount: 64,
     badge: 'Best Seller',
     featured: true,
     inStock: true,
     images: [
-      'https://images.unsplash.com/photo-1533738363-b7f9aef128ce?q=80&w=1200&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1558877385-81a1c7e67d72?q=80&w=1200&auto=format&fit=crop'
+      '/assets/products/toys-avocado-plush.jpg',
+      '/assets/products/toys-celestial-companions.jpg'
     ],
     colors: [
-      { name: 'Gentle Stone Grey', hex: '#C4BEB6', inStock: true }
+      { name: 'Avocado Green & Warm Taupe', hex: '#7A9A60', inStock: true }
     ],
     sizes: [
-      { name: 'Medium Huggable (16" Length)', dimensions: 'Suitable from 0+ months', price: 2199 }
+      { name: 'Medium Plush (12" Height)', dimensions: 'Suitable from 0+ months', price: 1499 }
     ],
     specifications: {
-      material: '100% Organic Cotton Velour',
+      material: 'Ultra-Soft Organic Micro-Velour',
       fill: 'Hypoallergenic Recycled Cloud Fibers'
+    }
+  },
+  {
+    id: 'st-03',
+    name: 'Celestial Cloud Nursery Plushies Collection',
+    slug: 'celestial-cloud-nursery-plushies-collection',
+    category: 'soft-toys',
+    categoryName: 'Soft Toys',
+    tagline: 'Dreamy soft nursery companions for soothing bedtime rituals.',
+    description: 'Superbly tactile and comforting companions. Created with calming botanical wash fabric to make sleep time gentle and peaceful.',
+    price: 2199,
+    originalPrice: 2799,
+    rating: 5.0,
+    reviewCount: 42,
+    badge: 'Signature',
+    featured: false,
+    inStock: true,
+    images: [
+      '/assets/products/toys-celestial-companions.jpg',
+      '/assets/products/toys-koala-plush.jpg'
+    ],
+    colors: [
+      { name: 'Oatmeal & Pastel Cloud', hex: '#EDE6DB', inStock: true }
+    ],
+    sizes: [
+      { name: 'Set of 2 Companions', dimensions: 'Suitable from 0+ months', price: 2199 }
+    ],
+    specifications: {
+      material: '100% Organic Velour Cotton',
+      fill: 'Recycled Hypoallergenic Fibers'
     }
   }
 ];

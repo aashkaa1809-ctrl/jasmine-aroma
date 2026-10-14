@@ -7,20 +7,20 @@ import { Instagram, ArrowUpRight } from 'lucide-react';
 export const InstagramSection: React.FC = () => {
   const posts = [
     {
-      image: 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=800&auto=format&fit=crop',
-      caption: 'Morning sun over the 500TC Organic Sateen in Sanctuary Ivory #JasmineAroma'
+      image: '/assets/products/bedsheet-luxury-white.jpg',
+      caption: 'Morning sun over the Hand Block Printed Cotton Bedsheet in Sanctuary Ivory #JasmineAroma'
     },
     {
-      image: 'https://images.unsplash.com/photo-1616046229478-9901c5536a45?q=80&w=800&auto=format&fit=crop',
-      caption: 'Cloud loft weightlessness for restorative weekends #SlowLiving'
+      image: '/assets/products/comforter-cozy-refresh.jpg',
+      caption: 'Cloud loft weightlessness with the Cozy Refresh Comforter for restorative weekends #SlowLiving'
     },
     {
-      image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=800&auto=format&fit=crop',
-      caption: 'Belgian textured linen shams in natural earth tones #HomeStyling'
+      image: '/assets/products/cushion-decorative-flax.jpg',
+      caption: 'Artisanal decorative flax linen shams in natural earth tones #HomeStyling'
     },
     {
-      image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=800&auto=format&fit=crop',
-      caption: 'Floor-to-ceiling flax drapes diffusing golden hour light #InteriorDecor'
+      image: '/assets/products/curtains-pinch-pleat-beige.jpg',
+      caption: 'Pinch pleat classic linen drapes diffusing golden hour light #InteriorDecor'
     }
   ];
 
