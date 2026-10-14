@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/'],
     },
-    sitemap: 'https://jasminearoma.com/sitemap.xml',
+    sitemap: 'https://jasminearoma.in/sitemap.xml',
   };
 }

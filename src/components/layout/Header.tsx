@@ -271,7 +271,15 @@ export const Header: React.FC = () => {
               <span>Complimentary Personal Styling & Fabric Swatches</span>
             </div>
             <p className="text-[11px] text-neutral-500 font-sans">
-              Connect with our styling atelier on Instagram @jasminearoma
+              Connect with our styling atelier on Instagram{' '}
+              <a
+                href="https://www.instagram.com/jasmine.aroma_/?hl=en#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-luxury-gold hover:underline"
+              >
+                @jasmine.aroma_
+              </a>
             </p>
           </div>
         </div>

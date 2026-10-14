@@ -38,13 +38,13 @@ export const InstagramSection: React.FC = () => {
             </h2>
           </div>
           <a
-            href="https://instagram.com/jasminearoma"
+            href="https://www.instagram.com/jasmine.aroma_/?hl=en#"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-xs font-sans uppercase tracking-[0.2em] text-luxury-gold hover:text-white transition-colors mt-4 sm:mt-0"
           >
             <Instagram size={16} />
-            <span>@jasminearoma</span>
+            <span>@jasmine.aroma_</span>
             <ArrowUpRight size={14} />
           </a>
         </div>
@@ -54,7 +54,7 @@ export const InstagramSection: React.FC = () => {
           {posts.map((post, i) => (
             <a
               key={i}
-              href="https://instagram.com/jasminearoma"
+              href="https://www.instagram.com/jasmine.aroma_/?hl=en#"
               target="_blank"
               rel="noopener noreferrer"
               className="group relative aspect-square bg-neutral-900 overflow-hidden rounded-sm border border-white/10 block"

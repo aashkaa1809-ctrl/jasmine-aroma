@@ -30,7 +30,7 @@ export const CartDrawer: React.FC = () => {
     message += `Total Estimated Order Value: ₹${cartSubtotal.toLocaleString('en-IN')}\n\nPlease confirm availability and delivery timelines.`;
 
     const encoded = encodeURIComponent(message);
-    window.open(`https://wa.me/?text=${encoded}`, '_blank');
+    window.open(`https://wa.me/918307369611?text=${encoded}`, '_blank');
   };
 
   return (

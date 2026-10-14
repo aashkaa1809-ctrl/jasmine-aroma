@@ -53,7 +53,7 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
 
   const handleWhatsAppInquiry = () => {
     const text = `Hello Jasmine Aroma,\n\nI am interested in:\n- ${product.name}\n- Size: ${selectedSize || 'Default'}\n- Color: ${selectedColor || 'Default'}\n- Quantity: ${quantity}\n- Price: ₹${(currentPrice * quantity).toLocaleString('en-IN')}\n\nCan you share fabric availability and delivery timeline?`;
-    window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
+    window.open(`https://wa.me/918307369611?text=${encodeURIComponent(text)}`, '_blank');
   };
 
   const relatedProducts = PRODUCTS.filter(

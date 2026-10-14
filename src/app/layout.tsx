@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Jasmine Aroma | Luxury Home Décor & Organic Bedding Atelier',
     description: 'Awaken your senses in pure organic comfort. Handcrafted bedsheets, plush comforters, cushion covers, and linen drapes.',
-    url: 'https://jasminearoma.com',
+    url: 'https://jasminearoma.in',
     siteName: 'Jasmine Aroma',
     images: [
       {
@@ -58,19 +58,21 @@ export default function RootLayout({
     '@type': 'HomeGoodsStore',
     name: 'Jasmine Aroma',
     description: 'Luxury home furnishings and organic bedding atelier.',
-    url: 'https://jasminearoma.com',
+    url: 'https://jasminearoma.in',
     priceRange: '₹₹₹',
     brand: {
       '@type': 'Brand',
       name: 'Jasmine Aroma',
-      logo: 'https://jasminearoma.com/assets/branding/logo.svg'
+      logo: 'https://jasminearoma.in/assets/branding/logo-dark-mode.png'
     },
     address: {
       '@type': 'PostalAddress',
       addressCountry: 'IN'
     },
+    telephone: '+918307369611',
+    email: 'contact@jasminearoma.in',
     sameAs: [
-      'https://instagram.com/jasminearoma'
+      'https://www.instagram.com/jasmine.aroma_/?hl=en#'
     ]
   };
 

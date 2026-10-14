@@ -184,21 +184,25 @@ export const Footer: React.FC = () => {
             <div className="space-y-3 text-xs text-neutral-400">
               <p>
                 <span className="text-white block font-medium">Customer Support:</span>
-                concierge@jasminearoma.com
+                <a href="mailto:contact@jasminearoma.in" className="hover:text-white transition-colors">
+                  contact@jasminearoma.in
+                </a>
               </p>
               <p>
-                <span className="text-white block font-medium">Personal Styling:</span>
-                +91 (0) 800-JASMINE
+                <span className="text-white block font-medium">Phone &amp; WhatsApp:</span>
+                <a href="tel:+918307369611" className="hover:text-white transition-colors">
+                  +91 83073 69611
+                </a>
               </p>
               <p>
                 <span className="text-white block font-medium">Instagram:</span>
                 <a
-                  href="https://instagram.com/jasminearoma"
+                  href="https://www.instagram.com/jasmine.aroma_/?hl=en#"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-luxury-gold hover:underline"
                 >
-                  @jasminearoma
+                  @jasmine.aroma_
                 </a>
               </p>
               <div className="pt-2">

@@ -210,8 +210,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <span className="text-neutral-500 uppercase tracking-[0.15em] block text-[10px]">Email Concierge</span>
-                    <a href="mailto:concierge@jasminearoma.com" className="text-white hover:text-luxury-gold transition-colors font-medium">
-                      concierge@jasminearoma.com
+                    <a href="mailto:contact@jasminearoma.in" className="text-white hover:text-luxury-gold transition-colors font-medium">
+                      contact@jasminearoma.in
                     </a>
                   </div>
                 </div>
@@ -222,8 +222,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <span className="text-neutral-500 uppercase tracking-[0.15em] block text-[10px]">Concierge Hotline</span>
-                    <a href="tel:+918005276463" className="text-white hover:text-luxury-gold transition-colors font-medium">
-                      +91 (0) 800-JASMINE
+                    <a href="tel:+918307369611" className="text-white hover:text-luxury-gold transition-colors font-medium">
+                      +91 83073 69611
                     </a>
                   </div>
                 </div>
@@ -235,12 +235,12 @@ export default function ContactPage() {
                   <div>
                     <span className="text-neutral-500 uppercase tracking-[0.15em] block text-[10px]">Social Atelier</span>
                     <a
-                      href="https://instagram.com/jasminearoma"
+                      href="https://www.instagram.com/jasmine.aroma_/?hl=en#"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-white hover:text-luxury-gold transition-colors font-medium"
                     >
-                      @jasminearoma
+                      @jasmine.aroma_
                     </a>
                   </div>
                 </div>
@@ -249,13 +249,13 @@ export default function ContactPage() {
               {/* Direct WhatsApp Quick Chat */}
               <div className="pt-4 border-t border-white/10">
                 <a
-                  href="https://wa.me/?text=Hello%20Jasmine%20Aroma%20Concierge,%20I%20would%20like%20styling%20advice%20for%20my%20bedroom."
+                  href="https://wa.me/918307369611?text=Hello%20Jasmine%20Aroma%20Concierge,%20I%20would%20like%20styling%20advice%20for%20my%20bedroom."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full bg-[#25D366]/15 hover:bg-[#25D366]/25 border border-[#25D366]/40 text-[#25D366] p-4 text-xs uppercase tracking-[0.2em] font-medium flex items-center justify-center gap-2 rounded-sm transition-colors"
                 >
                   <MessageCircle size={16} />
-                  <span>Instant WhatsApp Styling</span>
+                  <span>Instant WhatsApp Styling (+91 83073 69611)</span>
                 </a>
               </div>
             </div>

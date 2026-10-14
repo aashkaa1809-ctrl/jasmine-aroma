@@ -3,7 +3,7 @@ import { PRODUCTS } from '../data/products';
 import { CATEGORIES } from '../data/categories';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://jasminearoma.com';
+  const baseUrl = 'https://jasminearoma.in';
 
   const staticRoutes = [
     '',
