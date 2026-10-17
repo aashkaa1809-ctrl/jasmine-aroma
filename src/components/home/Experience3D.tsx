@@ -31,11 +31,11 @@ export const Experience3D: React.FC = () => {
     // Geometry: Silky Fabric Wave Plane
     const geometry = new THREE.PlaneGeometry(16, 10, 48, 32);
     
-    // Custom Material with Subtle Gold and Sheen
+    // Custom Material with Subtle Champagne Silk and Sheen
     const material = new THREE.MeshStandardMaterial({
-      color: 0x181512,
-      roughness: 0.45,
-      metalness: 0.15,
+      color: 0xEDE5D8,
+      roughness: 0.55,
+      metalness: 0.05,
       wireframe: false,
       side: THREE.DoubleSide
     });
@@ -46,7 +46,7 @@ export const Experience3D: React.FC = () => {
     scene.add(mesh);
 
     // Floating Botanical Stardust Particles
-    const particlesCount = 90;
+    const particlesCount = 75;
     const particleGeometry = new THREE.BufferGeometry();
     const positions = new Float32Array(particlesCount * 3);
     const opacities = new Float32Array(particlesCount);
@@ -55,32 +55,32 @@ export const Experience3D: React.FC = () => {
       positions[i] = (Math.random() - 0.5) * 14;
       positions[i + 1] = (Math.random() - 0.5) * 8;
       positions[i + 2] = (Math.random() - 0.5) * 8;
-      opacities[i / 3] = Math.random() * 0.6 + 0.2;
+      opacities[i / 3] = Math.random() * 0.5 + 0.2;
     }
 
     particleGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
     const particleMaterial = new THREE.PointsMaterial({
-      color: 0xC5A880,
-      size: 0.05,
+      color: 0xB4884F,
+      size: 0.045,
       transparent: true,
-      opacity: 0.5,
-      blending: THREE.AdditiveBlending
+      opacity: 0.45,
+      blending: THREE.NormalBlending
     });
 
     const particlesMesh = new THREE.Points(particleGeometry, particleMaterial);
     scene.add(particlesMesh);
 
     // Lights
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.85);
     scene.add(ambientLight);
 
-    const warmLight = new THREE.DirectionalLight(0xE5CBA3, 1.8);
+    const warmLight = new THREE.DirectionalLight(0xFDF8F0, 1.3);
     warmLight.position.set(4, 5, 4);
     scene.add(warmLight);
 
-    const coolRimLight = new THREE.DirectionalLight(0x8899aa, 0.9);
-    coolRimLight.position.set(-5, -2, 2);
-    scene.add(coolRimLight);
+    const softFillLight = new THREE.DirectionalLight(0xE5DACB, 0.7);
+    softFillLight.position.set(-5, -2, 2);
+    scene.add(softFillLight);
 
     // Mouse interaction
     let mouseX = 0;
@@ -168,7 +168,7 @@ export const Experience3D: React.FC = () => {
   return (
     <div
       ref={containerRef}
-      className="absolute inset-0 pointer-events-none z-10 overflow-hidden opacity-60"
+      className="absolute inset-0 pointer-events-none z-10 overflow-hidden opacity-35"
       aria-hidden="true"
     />
   );

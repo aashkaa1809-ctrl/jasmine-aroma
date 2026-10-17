@@ -7,12 +7,12 @@ import { ArrowRight, Sparkles } from 'lucide-react';
 
 export const StorySection: React.FC = () => {
   return (
-    <section className="py-24 md:py-36 bg-[#0A0A0A] text-white relative overflow-hidden">
+    <section className="py-20 md:py-32 bg-white text-neutral-900 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           {/* Left Imagery Column (Cols 1-6) */}
           <div className="lg:col-span-6 relative">
-            <div className="relative aspect-[4/5] rounded-sm overflow-hidden border border-white/10 shadow-2xl">
+            <div className="relative aspect-[4/5] rounded-sm overflow-hidden border border-[#E8E2D8] shadow-lg">
               <Image
                 src="/assets/lifestyle/living-room-editorial.jpg"
                 alt="Jasmine Aroma Weave and Organic Fabric Detail"
@@ -20,58 +20,58 @@ export const StorySection: React.FC = () => {
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover object-center"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
             </div>
 
             {/* Overlapping Floating Inset Card */}
-            <div className="absolute -bottom-8 -right-4 sm:-right-8 bg-[#141414] border border-white/15 p-6 rounded-sm shadow-2xl max-w-xs hidden sm:block">
-              <div className="flex items-center gap-2 text-luxury-gold text-xs font-sans tracking-[0.2em] uppercase mb-1">
+            <div className="absolute -bottom-8 -right-4 sm:-right-8 bg-white border border-[#E5DFD5] p-6 rounded-md shadow-2xl max-w-xs hidden sm:block">
+              <div className="flex items-center gap-2 text-primary-wine text-xs font-sans tracking-[0.2em] uppercase mb-1 font-bold">
                 <Sparkles size={14} />
                 <span>ATELIER PURITY</span>
               </div>
-              <p className="text-2xl font-serif text-white font-normal mb-1">
+              <p className="text-2xl font-serif text-neutral-900 font-normal mb-1">
                 100% Organic
               </p>
-              <p className="text-[11px] text-neutral-400 font-sans leading-relaxed">
+              <p className="text-[11px] text-neutral-600 font-sans leading-relaxed">
                 Zero harmful chemicals, pesticides, or toxic synthetic dyes. Certified GOTS &amp; OEKO-TEX Standard 100.
               </p>
             </div>
           </div>
 
           {/* Right Text Column (Cols 7-12) */}
-          <div className="lg:col-span-6 space-y-8">
+          <div className="lg:col-span-6 space-y-7">
             <div>
-              <span className="text-xs font-sans tracking-[0.3em] uppercase text-luxury-gold block mb-3 font-medium">
+              <span className="text-xs font-sans tracking-[0.3em] uppercase text-primary-wine block mb-2 font-bold">
                 THE JASMINE PHILOSOPHY
               </span>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-normal leading-[1.15] text-white">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-normal leading-[1.15] text-neutral-900">
                 Crafted For Serenity, <br />
-                <span className="italic font-light text-luxury-gold">Woven With Intention.</span>
+                <span className="italic font-normal text-primary-wine">Woven With Intention.</span>
               </h2>
             </div>
 
-            <blockquote className="text-lg sm:text-xl font-serif italic text-neutral-300 border-l-2 border-luxury-gold pl-6 py-1">
+            <blockquote className="text-lg sm:text-xl font-serif italic text-neutral-700 border-l-2 border-primary-wine pl-6 py-1">
               &ldquo;True luxury is waking up in fabrics that feel like a breath of fresh morning air.&rdquo;
             </blockquote>
 
-            <p className="text-sm text-neutral-400 font-sans font-light leading-relaxed">
+            <p className="text-sm text-neutral-600 font-sans font-light leading-relaxed">
               At Jasmine Aroma, we believe your bedroom is your sacred sanctuary. Every thread of our bedsheets, every cloud-like fold of our comforters, and every drape of our linen curtains is meticulously crafted using ethical, long-staple organic fibers and subtle botanical essence.
             </p>
 
-            <div className="grid grid-cols-2 gap-6 pt-4 border-t border-white/10">
+            <div className="grid grid-cols-2 gap-6 pt-4 border-t border-[#EAE4DA]">
               <div>
-                <span className="text-3xl sm:text-4xl font-serif text-luxury-gold block mb-1">
+                <span className="text-3xl sm:text-4xl font-serif text-neutral-900 block mb-1">
                   500 TC
                 </span>
-                <span className="text-xs text-neutral-400 font-sans uppercase tracking-[0.18em]">
+                <span className="text-xs text-neutral-500 font-sans uppercase tracking-[0.16em]">
                   Single-Ply Organic Yarns
                 </span>
               </div>
               <div>
-                <span className="text-3xl sm:text-4xl font-serif text-luxury-gold block mb-1">
+                <span className="text-3xl sm:text-4xl font-serif text-neutral-900 block mb-1">
                   30 Nights
                 </span>
-                <span className="text-xs text-neutral-400 font-sans uppercase tracking-[0.18em]">
+                <span className="text-xs text-neutral-500 font-sans uppercase tracking-[0.16em]">
                   Restful Sleep Guarantee
                 </span>
               </div>
@@ -80,7 +80,7 @@ export const StorySection: React.FC = () => {
             <div className="pt-2">
               <Link
                 href="/about"
-                className="inline-flex items-center gap-3 text-xs uppercase tracking-[0.25em] text-white hover:text-luxury-gold transition-colors font-medium group"
+                className="inline-flex items-center gap-3 text-xs uppercase tracking-[0.25em] text-neutral-900 hover:text-primary-wine transition-colors font-bold group"
               >
                 <span>Read Our Brand Manifesto</span>
                 <ArrowRight size={15} className="transition-transform group-hover:translate-x-1" />

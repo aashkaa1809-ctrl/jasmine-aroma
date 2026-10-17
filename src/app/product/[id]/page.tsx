@@ -61,19 +61,19 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
   ).slice(0, 4);
 
   return (
-    <div className="min-h-screen bg-[#0A0A0A] text-white pt-28 sm:pt-32 pb-24 font-sans">
+    <div className="min-h-screen bg-[#FAF8F5] text-neutral-900 pt-28 sm:pt-32 pb-24 font-sans">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumbs */}
-        <nav className="flex items-center space-x-2 text-xs text-neutral-400 mb-8 font-sans">
-          <Link href="/" className="hover:text-white transition-colors">Home</Link>
+        <nav className="flex items-center space-x-2 text-xs text-neutral-500 mb-8 font-sans">
+          <Link href="/" className="hover:text-primary-wine transition-colors">Home</Link>
           <span>/</span>
-          <Link href="/products" className="hover:text-white transition-colors">Products</Link>
+          <Link href="/products" className="hover:text-primary-wine transition-colors">Products</Link>
           <span>/</span>
-          <Link href={`/products/${product.category}`} className="hover:text-white transition-colors">
+          <Link href={`/products/${product.category}`} className="hover:text-primary-wine transition-colors">
             {product.categoryName}
           </Link>
           <span>/</span>
-          <span className="text-luxury-gold truncate max-w-xs">{product.name}</span>
+          <span className="text-primary-wine font-medium truncate max-w-xs">{product.name}</span>
         </nav>
 
         {/* Product Hero Grid */}
@@ -81,7 +81,7 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
           {/* Gallery Left (Cols 1-7) */}
           <div className="lg:col-span-7 space-y-4">
             {/* Main Stage Image */}
-            <div className="relative aspect-[4/5] bg-neutral-900 rounded-sm overflow-hidden border border-white/10 shadow-2xl">
+            <div className="relative aspect-[4/5] bg-white rounded-sm overflow-hidden border border-[#E8E3DA] shadow-md">
               <Image
                 src={product.images[activeImageIndex] || product.images[0]}
                 alt={product.name}
@@ -92,7 +92,7 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
               />
               {product.badge && (
                 <div className="absolute top-4 left-4 z-10">
-                  <span className="bg-black/80 backdrop-blur-md border border-white/20 text-white text-[9px] uppercase tracking-[0.2em] px-3 py-1.5 font-medium">
+                  <span className="bg-white/95 backdrop-blur-md border border-[#E8E3DA] text-neutral-900 text-[9px] uppercase tracking-[0.2em] px-3 py-1.5 font-semibold shadow-sm">
                     {product.badge}
                   </span>
                 </div>
@@ -109,8 +109,8 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
                     onClick={() => setActiveImageIndex(i)}
                     className={`relative w-20 h-24 rounded-sm overflow-hidden border transition-all flex-shrink-0 ${
                       activeImageIndex === i
-                        ? 'border-luxury-gold ring-1 ring-luxury-gold'
-                        : 'border-white/10 opacity-60 hover:opacity-100'
+                        ? 'border-primary-wine ring-1 ring-primary-wine'
+                        : 'border-[#E8E3DA] opacity-70 hover:opacity-100'
                     }`}
                   >
                     <Image src={img} alt="Thumb" fill className="object-cover" />
@@ -121,40 +121,40 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
           </div>
 
           {/* Product Purchasing Info (Cols 8-12) */}
-          <div className="lg:col-span-5 space-y-7">
+          <div className="lg:col-span-5 space-y-7 bg-white p-8 sm:p-10 rounded-sm border border-[#E8E3DA] shadow-sm">
             <div>
               <div className="flex items-center justify-between text-xs mb-2">
-                <span className="text-luxury-gold uppercase tracking-[0.25em] font-medium">
+                <span className="text-primary-wine uppercase tracking-[0.25em] font-semibold">
                   {product.categoryName}
                 </span>
                 <div className="flex items-center gap-1.5 text-luxury-gold">
                   <Star size={13} fill="currentColor" stroke="none" />
-                  <span className="text-xs font-medium">{product.rating.toFixed(1)}</span>
-                  <span className="text-neutral-400">({product.reviewCount} reviews)</span>
+                  <span className="text-xs font-semibold text-neutral-900">{product.rating.toFixed(1)}</span>
+                  <span className="text-neutral-500">({product.reviewCount} reviews)</span>
                 </div>
               </div>
 
-              <h1 className="text-3xl sm:text-4xl font-serif text-white mb-2 leading-tight">
+              <h1 className="text-3xl sm:text-4xl font-serif text-neutral-900 mb-2 leading-tight">
                 {product.name}
               </h1>
 
-              <p className="text-xs text-neutral-300 font-sans font-light leading-relaxed">
+              <p className="text-xs text-neutral-600 font-sans font-light leading-relaxed">
                 {product.tagline}
               </p>
             </div>
 
             {/* Price */}
-            <div className="flex items-baseline gap-3 pb-6 border-b border-white/10">
-              <span className="text-3xl font-sans font-medium text-white">
+            <div className="flex items-baseline gap-3 pb-6 border-b border-[#E8E3DA]">
+              <span className="text-3xl font-sans font-semibold text-neutral-900">
                 &#8377;{currentPrice.toLocaleString('en-IN')}
               </span>
               {product.originalPrice && (
-                <span className="text-base font-sans text-neutral-500 line-through">
+                <span className="text-base font-sans text-neutral-400 line-through">
                   &#8377;{product.originalPrice.toLocaleString('en-IN')}
                 </span>
               )}
-              <span className="text-[11px] text-green-400 bg-green-950/40 border border-green-800/40 px-2 py-0.5 rounded ml-2">
-                In Stock &bull; Ready for Atelier Dispatch
+              <span className="text-[11px] text-green-700 bg-green-50 border border-green-200 px-2 py-0.5 rounded ml-2 font-medium">
+                In Stock &bull; Atelier Dispatch
               </span>
             </div>
 
@@ -162,8 +162,8 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
             {product.colors && product.colors.length > 0 && (
               <div className="space-y-3">
                 <div className="flex justify-between text-xs">
-                  <span className="text-neutral-400 uppercase tracking-[0.15em]">
-                    Color Tone: <strong className="text-white">{selectedColor}</strong>
+                  <span className="text-neutral-600 uppercase tracking-[0.15em]">
+                    Color Tone: <strong className="text-neutral-900 font-semibold">{selectedColor}</strong>
                   </span>
                 </div>
                 <div className="flex space-x-3">
@@ -173,7 +173,7 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
                       type="button"
                       onClick={() => setSelectedColor(c.name)}
                       className={`w-8 h-8 rounded-full border-2 transition-all flex items-center justify-center ${
-                        selectedColor === c.name ? 'border-luxury-gold scale-110 shadow-lg' : 'border-white/10'
+                        selectedColor === c.name ? 'border-primary-wine scale-110 shadow-sm' : 'border-neutral-300'
                       }`}
                       style={{ backgroundColor: c.hex }}
                       title={c.name}
@@ -194,7 +194,7 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
             {product.sizes && product.sizes.length > 0 && (
               <div className="space-y-3">
                 <div className="flex justify-between text-xs">
-                  <span className="text-neutral-400 uppercase tracking-[0.15em]">
+                  <span className="text-neutral-600 uppercase tracking-[0.15em]">
                     Dimensions &amp; Configuration:
                   </span>
                 </div>
@@ -206,15 +206,15 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
                       onClick={() => setSelectedSize(s.name)}
                       className={`w-full p-3 rounded-sm border text-left text-xs transition-all flex items-center justify-between ${
                         selectedSize === s.name
-                          ? 'bg-[#1a1a1a] border-luxury-gold text-white shadow-md'
-                          : 'bg-black/30 border-white/10 text-neutral-400 hover:text-white hover:border-white/20'
+                          ? 'bg-[#FAF8F5] border-primary-wine text-neutral-900 font-medium'
+                          : 'bg-white border-[#E8E3DA] text-neutral-600 hover:text-neutral-900 hover:border-neutral-400'
                       }`}
                     >
                       <div>
-                        <span className="font-medium text-white block">{s.name}</span>
-                        <span className="text-[11px] text-neutral-400">{s.dimensions}</span>
+                        <span className="font-semibold text-neutral-900 block">{s.name}</span>
+                        <span className="text-[11px] text-neutral-500">{s.dimensions}</span>
                       </div>
-                      <span className="text-sm font-sans font-medium text-white">
+                      <span className="text-sm font-sans font-semibold text-neutral-900">
                         &#8377;{s.price.toLocaleString('en-IN')}
                       </span>
                     </button>
@@ -226,21 +226,21 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
             {/* Quantity & CTA Buttons */}
             <div className="space-y-4 pt-2">
               <div className="flex items-center gap-4">
-                <div className="flex items-center border border-white/20 rounded-sm">
+                <div className="flex items-center border border-[#E8E3DA] rounded-sm bg-[#FAF8F5]">
                   <button
                     type="button"
                     onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                    className="px-4 py-3 text-sm text-neutral-400 hover:text-white"
+                    className="px-4 py-3 text-sm text-neutral-600 hover:text-neutral-900"
                   >
                     -
                   </button>
-                  <span className="px-4 py-3 text-xs font-sans font-medium text-white">
+                  <span className="px-4 py-3 text-xs font-sans font-semibold text-neutral-900">
                     {quantity}
                   </span>
                   <button
                     type="button"
                     onClick={() => setQuantity(quantity + 1)}
-                    className="px-4 py-3 text-sm text-neutral-400 hover:text-white"
+                    className="px-4 py-3 text-sm text-neutral-600 hover:text-neutral-900"
                   >
                     +
                   </button>
@@ -249,7 +249,7 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
                 <button
                   type="button"
                   onClick={handleAddToCart}
-                  className="flex-grow bg-white hover:bg-luxury-gold text-black py-3.5 px-6 text-xs uppercase tracking-[0.25em] font-semibold flex items-center justify-center gap-2 shadow-2xl transition-all"
+                  className="flex-grow bg-neutral-900 hover:bg-primary-wine text-white py-3.5 px-6 text-xs uppercase tracking-[0.25em] font-semibold flex items-center justify-center gap-2 shadow-sm transition-all rounded-sm"
                 >
                   <ShoppingBag size={15} />
                   <span>Add to Bag &bull; &#8377;{(currentPrice * quantity).toLocaleString('en-IN')}</span>
@@ -260,7 +260,7 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
               <button
                 type="button"
                 onClick={handleWhatsAppInquiry}
-                className="w-full border border-green-600/50 hover:bg-green-600/10 text-green-400 py-3 text-xs uppercase tracking-[0.2em] font-medium flex items-center justify-center gap-2 transition-colors rounded-sm"
+                className="w-full border border-[#25D366] bg-green-50 hover:bg-green-100 text-[#128C7E] py-3 text-xs uppercase tracking-[0.2em] font-semibold flex items-center justify-center gap-2 transition-colors rounded-sm"
               >
                 <MessageCircle size={15} />
                 <span>Order Directly via WhatsApp Concierge</span>
@@ -268,20 +268,20 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
             </div>
 
             {/* Trust Badges */}
-            <div className="grid grid-cols-3 gap-3 pt-6 border-t border-white/10 text-center">
-              <div className="p-2.5 bg-white/5 rounded-sm">
-                <Truck size={16} className="text-luxury-gold mx-auto mb-1" />
-                <span className="text-[10px] text-neutral-300 block font-medium">Express Dispatch</span>
+            <div className="grid grid-cols-3 gap-3 pt-6 border-t border-[#E8E3DA] text-center">
+              <div className="p-2.5 bg-[#FAF8F5] border border-[#E8E3DA] rounded-sm">
+                <Truck size={16} className="text-primary-wine mx-auto mb-1" />
+                <span className="text-[10px] text-neutral-900 block font-semibold">Express Dispatch</span>
                 <span className="text-[9px] text-neutral-500">2-4 business days</span>
               </div>
-              <div className="p-2.5 bg-white/5 rounded-sm">
-                <RotateCcw size={16} className="text-luxury-gold mx-auto mb-1" />
-                <span className="text-[10px] text-neutral-300 block font-medium">30-Night Trial</span>
-                <span className="text-[9px] text-neutral-500">Restful sleep guarantee</span>
+              <div className="p-2.5 bg-[#FAF8F5] border border-[#E8E3DA] rounded-sm">
+                <RotateCcw size={16} className="text-primary-wine mx-auto mb-1" />
+                <span className="text-[10px] text-neutral-900 block font-semibold">30-Night Trial</span>
+                <span className="text-[9px] text-neutral-500">Sleep guarantee</span>
               </div>
-              <div className="p-2.5 bg-white/5 rounded-sm">
-                <ShieldCheck size={16} className="text-luxury-gold mx-auto mb-1" />
-                <span className="text-[10px] text-neutral-300 block font-medium">Non-Toxic</span>
+              <div className="p-2.5 bg-[#FAF8F5] border border-[#E8E3DA] rounded-sm">
+                <ShieldCheck size={16} className="text-primary-wine mx-auto mb-1" />
+                <span className="text-[10px] text-neutral-900 block font-semibold">Non-Toxic</span>
                 <span className="text-[9px] text-neutral-500">GOTS &amp; OEKO-TEX</span>
               </div>
             </div>
@@ -289,30 +289,30 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
         </div>
 
         {/* Detailed Specifications & Story Tabs */}
-        <div className="mt-24 border-t border-white/10 pt-12">
-          <div className="flex border-b border-white/10 mb-8 space-x-8">
+        <div className="mt-24 border-t border-[#E8E3DA] pt-12">
+          <div className="flex border-b border-[#E8E3DA] mb-8 space-x-8">
             <button
               type="button"
               onClick={() => setActiveTab('specs')}
               className={`pb-4 text-xs font-sans uppercase tracking-[0.25em] transition-colors relative ${
-                activeTab === 'specs' ? 'text-luxury-gold font-medium' : 'text-neutral-400 hover:text-white'
+                activeTab === 'specs' ? 'text-primary-wine font-semibold' : 'text-neutral-500 hover:text-neutral-900'
               }`}
             >
               Specifications &amp; Weave
               {activeTab === 'specs' && (
-                <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-luxury-gold" />
+                <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-primary-wine" />
               )}
             </button>
             <button
               type="button"
               onClick={() => setActiveTab('care')}
               className={`pb-4 text-xs font-sans uppercase tracking-[0.25em] transition-colors relative ${
-                activeTab === 'care' ? 'text-luxury-gold font-medium' : 'text-neutral-400 hover:text-white'
+                activeTab === 'care' ? 'text-primary-wine font-semibold' : 'text-neutral-500 hover:text-neutral-900'
               }`}
             >
               Wash &amp; Care Rituals
               {activeTab === 'care' && (
-                <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-luxury-gold" />
+                <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-primary-wine" />
               )}
             </button>
             {product.story && (
@@ -320,12 +320,12 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
                 type="button"
                 onClick={() => setActiveTab('story')}
                 className={`pb-4 text-xs font-sans uppercase tracking-[0.25em] transition-colors relative ${
-                  activeTab === 'story' ? 'text-luxury-gold font-medium' : 'text-neutral-400 hover:text-white'
+                  activeTab === 'story' ? 'text-primary-wine font-semibold' : 'text-neutral-500 hover:text-neutral-900'
                 }`}
               >
                 The Artisan Story
                 {activeTab === 'story' && (
-                  <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-luxury-gold" />
+                  <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-primary-wine" />
                 )}
               </button>
             )}
@@ -333,55 +333,55 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
 
           {/* Tab 1: Specs */}
           {activeTab === 'specs' && (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-[#121212] p-8 rounded-sm border border-white/10 animate-fade-in">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-white p-8 rounded-sm border border-[#E8E3DA] animate-fade-in shadow-sm">
               <div className="space-y-4">
-                <h3 className="text-base font-serif text-white mb-2">Technical Matrix</h3>
+                <h3 className="text-base font-serif text-neutral-900 mb-2 font-medium">Technical Matrix</h3>
                 <dl className="space-y-3 text-xs">
                   {product.specifications.material && (
-                    <div className="flex justify-between py-1.5 border-b border-white/5">
-                      <dt className="text-neutral-400">Material</dt>
-                      <dd className="text-white font-medium text-right">{product.specifications.material}</dd>
+                    <div className="flex justify-between py-1.5 border-b border-[#E8E3DA]">
+                      <dt className="text-neutral-500">Material</dt>
+                      <dd className="text-neutral-900 font-semibold text-right">{product.specifications.material}</dd>
                     </div>
                   )}
                   {product.specifications.weave && (
-                    <div className="flex justify-between py-1.5 border-b border-white/5">
-                      <dt className="text-neutral-400">Weave Structure</dt>
-                      <dd className="text-white font-medium text-right">{product.specifications.weave}</dd>
+                    <div className="flex justify-between py-1.5 border-b border-[#E8E3DA]">
+                      <dt className="text-neutral-500">Weave Structure</dt>
+                      <dd className="text-neutral-900 font-semibold text-right">{product.specifications.weave}</dd>
                     </div>
                   )}
                   {product.specifications.threadCount && (
-                    <div className="flex justify-between py-1.5 border-b border-white/5">
-                      <dt className="text-neutral-400">Thread Count</dt>
-                      <dd className="text-white font-medium text-right">{product.specifications.threadCount}</dd>
+                    <div className="flex justify-between py-1.5 border-b border-[#E8E3DA]">
+                      <dt className="text-neutral-500">Thread Count</dt>
+                      <dd className="text-neutral-900 font-semibold text-right">{product.specifications.threadCount}</dd>
                     </div>
                   )}
                   {product.specifications.pocketDepth && (
-                    <div className="flex justify-between py-1.5 border-b border-white/5">
-                      <dt className="text-neutral-400">Mattress Pocket Depth</dt>
-                      <dd className="text-white font-medium text-right">{product.specifications.pocketDepth}</dd>
+                    <div className="flex justify-between py-1.5 border-b border-[#E8E3DA]">
+                      <dt className="text-neutral-500">Mattress Pocket Depth</dt>
+                      <dd className="text-neutral-900 font-semibold text-right">{product.specifications.pocketDepth}</dd>
                     </div>
                   )}
                   {product.specifications.fill && (
-                    <div className="flex justify-between py-1.5 border-b border-white/5">
-                      <dt className="text-neutral-400">Core Fill</dt>
-                      <dd className="text-white font-medium text-right">{product.specifications.fill}</dd>
+                    <div className="flex justify-between py-1.5 border-b border-[#E8E3DA]">
+                      <dt className="text-neutral-500">Core Fill</dt>
+                      <dd className="text-neutral-900 font-semibold text-right">{product.specifications.fill}</dd>
                     </div>
                   )}
                 </dl>
               </div>
 
               <div className="space-y-4">
-                <h3 className="text-base font-serif text-white mb-2">Certifications &amp; Highlights</h3>
-                <ul className="space-y-2.5 text-xs text-neutral-300">
+                <h3 className="text-base font-serif text-neutral-900 mb-2 font-medium">Certifications &amp; Highlights</h3>
+                <ul className="space-y-2.5 text-xs text-neutral-700">
                   {product.highlights?.map((h, idx) => (
                     <li key={idx} className="flex items-center gap-2">
-                      <Check size={14} className="text-luxury-gold flex-shrink-0" />
+                      <Check size={14} className="text-primary-wine flex-shrink-0" />
                       <span>{h}</span>
                     </li>
                   ))}
                   {product.specifications.certifications?.map((c, idx) => (
                     <li key={idx} className="flex items-center gap-2">
-                      <Sparkles size={14} className="text-luxury-gold flex-shrink-0" />
+                      <Sparkles size={14} className="text-primary-wine flex-shrink-0" />
                       <span>Certified: {c}</span>
                     </li>
                   ))}
@@ -392,19 +392,19 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
 
           {/* Tab 2: Care */}
           {activeTab === 'care' && (
-            <div className="bg-[#121212] p-8 rounded-sm border border-white/10 animate-fade-in space-y-4">
-              <h3 className="text-base font-serif text-white">Recommended Preservation Rituals</h3>
-              <p className="text-xs text-neutral-400 leading-relaxed">
+            <div className="bg-white p-8 rounded-sm border border-[#E8E3DA] animate-fade-in space-y-4 shadow-sm">
+              <h3 className="text-base font-serif text-neutral-900 font-medium">Recommended Preservation Rituals</h3>
+              <p className="text-xs text-neutral-600 leading-relaxed">
                 To maintain the silky hand-feel and integrity of the organic fibers over decades, please follow these simple laundering instructions:
               </p>
-              <ul className="space-y-2.5 text-xs text-neutral-300 pt-2">
+              <ul className="space-y-2.5 text-xs text-neutral-700 pt-2">
                 {product.specifications.careInstructions?.map((inst, i) => (
                   <li key={i} className="flex items-center gap-2.5">
-                    <Check size={14} className="text-luxury-gold flex-shrink-0" />
+                    <Check size={14} className="text-primary-wine flex-shrink-0" />
                     <span>{inst}</span>
                   </li>
                 )) || (
-                  <li className="text-xs text-neutral-400">
+                  <li className="text-xs text-neutral-600">
                     Machine wash cold with mild detergent. Tumble dry gentle on low heat.
                   </li>
                 )}
@@ -414,9 +414,9 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
 
           {/* Tab 3: Story */}
           {activeTab === 'story' && product.story && (
-            <div className="bg-[#121212] p-8 rounded-sm border border-white/10 animate-fade-in space-y-3">
-              <h3 className="text-base font-serif text-white">From the Atelier Master</h3>
-              <p className="text-sm text-neutral-300 leading-relaxed font-serif italic">
+            <div className="bg-white p-8 rounded-sm border border-[#E8E3DA] animate-fade-in space-y-3 shadow-sm">
+              <h3 className="text-base font-serif text-neutral-900 font-medium">From the Atelier Master</h3>
+              <p className="text-sm text-neutral-700 leading-relaxed font-serif italic">
                 &ldquo;{product.story}&rdquo;
               </p>
             </div>
@@ -425,19 +425,19 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
 
         {/* Related Products */}
         {relatedProducts.length > 0 && (
-          <div className="mt-28 border-t border-white/10 pt-16">
+          <div className="mt-28 border-t border-[#E8E3DA] pt-16">
             <div className="flex items-end justify-between mb-10">
               <div>
-                <span className="text-xs font-sans tracking-[0.3em] uppercase text-luxury-gold block mb-2 font-medium">
+                <span className="text-xs font-sans tracking-[0.3em] uppercase text-primary-wine block mb-2 font-semibold">
                   COMPLETE YOUR SANCTUARY
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-serif text-white">
+                <h2 className="text-2xl sm:text-3xl font-serif text-neutral-900">
                   Related Atelier Pieces
                 </h2>
               </div>
               <Link
                 href={`/products/${product.category}`}
-                className="text-xs uppercase tracking-[0.2em] text-neutral-400 hover:text-white transition-colors"
+                className="text-xs uppercase tracking-[0.2em] text-neutral-500 hover:text-primary-wine transition-colors font-medium"
               >
                 View Category &rarr;
               </Link>

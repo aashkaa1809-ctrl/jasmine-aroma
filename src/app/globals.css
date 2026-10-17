@@ -9,13 +9,14 @@
   --font-jost: 'Jost', system-ui, sans-serif;
   --font-cinzel: 'Cinzel', Georgia, serif;
 
-  --bg-dark: #0A0A0A;
-  --bg-soft: #121212;
-  --bg-light: #F9F7F4;
-  --text-main: #FFFFFF;
-  --text-muted: #8E8E8E;
-  --accent-gold: #C5A880;
-  --accent-gold-soft: #DFC7A5;
+  --bg-main: #FFFFFF;
+  --bg-warm: #FAF8F5;
+  --bg-surface: #F5F1EB;
+  --border-light: #E8E3DA;
+  --text-main: #171717;
+  --text-muted: #666666;
+  --brand-wine: #6B0B23;
+  --brand-gold: #A8834E;
 }
 
 * {
@@ -26,8 +27,8 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: #0A0A0A;
-  color: #FFFFFF;
+  background-color: #FAF8F5;
+  color: #171717;
   font-family: var(--font-jost);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -35,33 +36,33 @@ html {
 
 body {
   overflow-x: hidden;
-  background-color: #0A0A0A;
-  color: #FFFFFF;
+  background-color: #FAF8F5;
+  color: #171717;
 }
 
-/* Custom Luxury Scrollbar */
+/* Custom Luxury Light Scrollbar */
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0D0D0D;
+  background: #F4F0E8;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #2D2D2D;
-  border-radius: 2px;
+  background: #D4CBBB;
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #C5A880;
+  background: #6B0B23;
 }
 
 /* Selection */
 ::selection {
-  background: #C5A880;
-  color: #0A0A0A;
+  background: #6B0B23;
+  color: #FFFFFF;
 }
 
 /* Luxury Typography Classes */
@@ -79,24 +80,24 @@ body {
 
 /* Subtle glow and luxury borders */
 .border-subtle {
-  border-color: rgba(255, 255, 255, 0.08);
+  border-color: #E8E3DA;
 }
 
 .border-gold-subtle {
-  border-color: rgba(197, 168, 128, 0.25);
+  border-color: rgba(168, 131, 78, 0.35);
 }
 
 .glass-panel {
-  background: rgba(18, 18, 18, 0.7);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(232, 227, 218, 0.8);
 }
 
 .glass-panel-light {
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid #E8E3DA;
 }
 
 /* Shimmer animation */
@@ -118,9 +119,18 @@ body {
   background-image: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0) 0,
-    rgba(255, 255, 255, 0.05) 20%,
-    rgba(255, 255, 255, 0.1) 60%,
+    rgba(255, 255, 255, 0.4) 20%,
+    rgba(255, 255, 255, 0.7) 60%,
     rgba(255, 255, 255, 0)
   );
   animation: shimmer 2.5s infinite;
+}
+
+/* Hide scrollbar for tabs */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

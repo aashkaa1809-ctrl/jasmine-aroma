@@ -29,17 +29,17 @@ export const TestimonialsSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 md:py-32 bg-[#0A0A0A] text-white relative">
+    <section className="py-24 md:py-32 bg-[#FAF8F5] text-neutral-900 border-b border-[#E8E3DA] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-xs font-sans tracking-[0.3em] uppercase text-luxury-gold block mb-3 font-medium">
+          <span className="text-xs font-sans tracking-[0.3em] uppercase text-primary-wine block mb-3 font-semibold">
             CLIENT PERSPECTIVES
           </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-normal text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-normal text-neutral-900 mb-4">
             Loved by Designers &amp; Mindful Sleepers
           </h2>
-          <p className="text-xs sm:text-sm text-neutral-400 font-sans font-light leading-relaxed">
+          <p className="text-xs sm:text-sm text-neutral-600 font-sans font-light leading-relaxed">
             Authentic reflections from homeowners and interior stylists who elevated their living sanctuaries with Jasmine Aroma.
           </p>
         </div>
@@ -49,7 +49,7 @@ export const TestimonialsSection: React.FC = () => {
           {reviews.map((rev, i) => (
             <div
               key={i}
-              className="bg-[#121212] border border-white/10 p-8 rounded-sm relative flex flex-col justify-between hover:border-luxury-gold/40 transition-colors duration-500 shadow-xl"
+              className="bg-white border border-[#E8E3DA] p-8 rounded-sm relative flex flex-col justify-between hover:border-primary-wine/40 hover:shadow-md transition-all duration-300"
             >
               <div>
                 <div className="flex items-center justify-between mb-6">
@@ -58,22 +58,22 @@ export const TestimonialsSection: React.FC = () => {
                       <Star key={s} size={13} fill="currentColor" stroke="none" />
                     ))}
                   </div>
-                  <Quote size={20} className="text-white/20" />
+                  <Quote size={20} className="text-primary-wine/20" />
                 </div>
 
-                <p className="text-sm sm:text-base font-serif italic text-neutral-200 leading-relaxed mb-6">
+                <p className="text-sm sm:text-base font-serif italic text-neutral-700 leading-relaxed mb-6">
                   &ldquo;{rev.quote}&rdquo;
                 </p>
               </div>
 
-              <div className="pt-6 border-t border-white/10">
-                <p className="text-sm font-sans font-medium text-white">
+              <div className="pt-6 border-t border-[#E8E3DA]">
+                <p className="text-sm font-sans font-semibold text-neutral-900">
                   {rev.author}
                 </p>
-                <p className="text-xs text-neutral-400 font-sans">
+                <p className="text-xs text-neutral-500 font-sans">
                   {rev.title} &bull; {rev.location}
                 </p>
-                <span className="inline-block mt-2 text-[10px] text-luxury-gold tracking-[0.15em] uppercase font-sans">
+                <span className="inline-block mt-2 text-[10px] text-primary-wine tracking-[0.15em] uppercase font-semibold font-sans">
                   Verified: {rev.product}
                 </span>
               </div>

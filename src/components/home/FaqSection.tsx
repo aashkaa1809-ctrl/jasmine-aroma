@@ -34,17 +34,17 @@ export const FaqSection: React.FC = () => {
   };
 
   return (
-    <section className="py-24 md:py-32 bg-[#0E0E0E] text-white border-t border-white/5">
+    <section className="py-24 md:py-32 bg-white text-neutral-900 border-t border-[#E8E3DA]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="text-xs font-sans tracking-[0.3em] uppercase text-luxury-gold block mb-3 font-medium">
+          <span className="text-xs font-sans tracking-[0.3em] uppercase text-primary-wine block mb-3 font-semibold">
             CONCIERGE CLARITY
           </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-normal text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-normal text-neutral-900 mb-4">
             Frequently Asked Inquiries
           </h2>
-          <p className="text-xs sm:text-sm text-neutral-400 font-sans font-light leading-relaxed">
+          <p className="text-xs sm:text-sm text-neutral-600 font-sans font-light leading-relaxed">
             Essential details regarding thread counts, pocket depths, curtain sizing, and organic fabric care.
           </p>
         </div>
@@ -56,7 +56,7 @@ export const FaqSection: React.FC = () => {
             return (
               <div
                 key={index}
-                className="border border-white/10 rounded-sm bg-[#121212] overflow-hidden transition-colors"
+                className="border border-[#E8E3DA] rounded-sm bg-[#FAF8F5] overflow-hidden transition-colors"
               >
                 <button
                   type="button"
@@ -64,16 +64,16 @@ export const FaqSection: React.FC = () => {
                   className="w-full text-left p-6 flex items-center justify-between gap-4 focus:outline-none"
                   aria-expanded={isOpen}
                 >
-                  <span className="text-base sm:text-lg font-serif text-white">
+                  <span className="text-base sm:text-lg font-serif text-neutral-900 font-medium">
                     {faq.question}
                   </span>
-                  <div className="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-luxury-gold flex-shrink-0 transition-colors">
+                  <div className="w-8 h-8 rounded-full border border-[#E8E3DA] bg-white flex items-center justify-center text-primary-wine flex-shrink-0 transition-colors shadow-sm">
                     {isOpen ? <Minus size={15} /> : <Plus size={15} />}
                   </div>
                 </button>
 
                 {isOpen && (
-                  <div className="px-6 pb-6 pt-0 text-xs sm:text-sm text-neutral-300 font-sans font-light leading-relaxed border-t border-white/5 pt-4 animate-fade-in">
+                  <div className="px-6 pb-6 pt-0 text-xs sm:text-sm text-neutral-700 font-sans font-light leading-relaxed border-t border-[#E8E3DA] pt-4 animate-fade-in">
                     {faq.answer}
                   </div>
                 )}

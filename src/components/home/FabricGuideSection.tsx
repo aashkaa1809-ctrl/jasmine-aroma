@@ -84,17 +84,17 @@ export const FabricGuideSection: React.FC = () => {
   const current = fabrics.find((f) => f.id === selectedFabric) || fabrics[0];
 
   return (
-    <section className="py-24 md:py-32 bg-[#0E0E0E] text-white border-b border-white/5">
+    <section className="py-24 md:py-32 bg-white text-neutral-900 border-b border-[#E8E3DA]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-xs font-sans tracking-[0.3em] uppercase text-luxury-gold block mb-3 font-medium">
+          <span className="text-xs font-sans tracking-[0.3em] uppercase text-primary-wine block mb-3 font-semibold">
             MATERIAL INTELLIGENCE
           </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-normal text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-normal text-neutral-900 mb-4">
             Find Your Ideal Weave &amp; Hand-Feel
           </h2>
-          <p className="text-xs sm:text-sm text-neutral-400 font-sans font-light leading-relaxed">
+          <p className="text-xs sm:text-sm text-neutral-600 font-sans font-light leading-relaxed">
             Compare our artisanal fabric architectures to choose the perfect pieces for your sleep preferences.
           </p>
         </div>
@@ -108,14 +108,14 @@ export const FabricGuideSection: React.FC = () => {
               onClick={() => setSelectedFabric(f.id)}
               className={`p-4 rounded-sm border text-left transition-all duration-300 ${
                 selectedFabric === f.id
-                  ? 'bg-[#181818] border-luxury-gold shadow-xl'
-                  : 'bg-black/40 border-white/10 hover:border-white/25 text-neutral-400 hover:text-white'
+                  ? 'bg-[#FAF8F5] border-primary-wine shadow-md ring-1 ring-primary-wine/20'
+                  : 'bg-white border-[#E8E3DA] hover:border-neutral-400 text-neutral-600 hover:text-neutral-900'
               }`}
             >
-              <span className="text-[10px] font-sans tracking-[0.2em] uppercase text-luxury-gold block mb-1">
+              <span className="text-[10px] font-sans tracking-[0.2em] uppercase text-primary-wine block mb-1 font-semibold">
                 {f.weaveType.split(' ')[0]}
               </span>
-              <span className="text-sm font-serif font-medium text-white block">
+              <span className="text-sm font-serif font-medium text-neutral-900 block">
                 {f.name}
               </span>
             </button>
@@ -123,35 +123,35 @@ export const FabricGuideSection: React.FC = () => {
         </div>
 
         {/* Active Fabric Breakdown Card */}
-        <div className="max-w-4xl mx-auto bg-[#141414] border border-white/10 p-8 sm:p-12 rounded-sm shadow-2xl">
+        <div className="max-w-4xl mx-auto bg-[#FAF8F5] border border-[#E8E3DA] p-8 sm:p-12 rounded-sm shadow-sm">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
             <div className="md:col-span-7 space-y-5">
               <div>
-                <span className="text-xs font-sans tracking-[0.25em] uppercase text-luxury-gold font-medium">
+                <span className="text-xs font-sans tracking-[0.25em] uppercase text-primary-wine font-semibold">
                   {current.weaveType}
                 </span>
-                <h3 className="text-2xl sm:text-3xl font-serif text-white mt-1">
+                <h3 className="text-2xl sm:text-3xl font-serif text-neutral-900 mt-1">
                   {current.name}
                 </h3>
               </div>
 
-              <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed font-light">
+              <p className="text-xs sm:text-sm text-neutral-700 leading-relaxed font-light">
                 {current.description}
               </p>
 
-              <div className="p-4 bg-black/50 border border-white/5 rounded-sm">
-                <span className="text-[10.5px] uppercase tracking-[0.2em] text-luxury-gold block mb-1 font-medium">
+              <div className="p-4 bg-white border border-[#E8E3DA] rounded-sm">
+                <span className="text-[10.5px] uppercase tracking-[0.2em] text-primary-wine block mb-1 font-semibold">
                   RECOMMENDED FOR
                 </span>
-                <p className="text-xs text-neutral-300 font-light">
+                <p className="text-xs text-neutral-700 font-light">
                   {current.bestFor}
                 </p>
               </div>
 
               <ul className="space-y-2 pt-2">
                 {current.features.map((feat, i) => (
-                  <li key={i} className="flex items-center gap-2.5 text-xs text-neutral-300">
-                    <Check size={14} className="text-luxury-gold flex-shrink-0" />
+                  <li key={i} className="flex items-center gap-2.5 text-xs text-neutral-700">
+                    <Check size={14} className="text-primary-wine flex-shrink-0" />
                     <span>{feat}</span>
                   </li>
                 ))}
@@ -159,22 +159,22 @@ export const FabricGuideSection: React.FC = () => {
             </div>
 
             {/* Right Rating Gauges */}
-            <div className="md:col-span-5 bg-black/60 border border-white/10 p-6 rounded-sm space-y-6">
-              <h4 className="text-xs font-sans tracking-[0.25em] uppercase text-white font-medium border-b border-white/10 pb-3">
+            <div className="md:col-span-5 bg-white border border-[#E8E3DA] p-6 rounded-sm space-y-6 shadow-sm">
+              <h4 className="text-xs font-sans tracking-[0.25em] uppercase text-neutral-900 font-semibold border-b border-[#E8E3DA] pb-3">
                 FABRIC METRICS
               </h4>
 
               {/* Hand feel */}
               <div>
                 <div className="flex items-center justify-between text-xs mb-2">
-                  <span className="text-neutral-400 flex items-center gap-1.5">
-                    <Feather size={14} className="text-luxury-gold" /> Softness &amp; Drape
+                  <span className="text-neutral-600 flex items-center gap-1.5">
+                    <Feather size={14} className="text-primary-wine" /> Softness &amp; Drape
                   </span>
-                  <span className="text-white font-medium">{current.softness} / 5</span>
+                  <span className="text-neutral-900 font-semibold">{current.softness} / 5</span>
                 </div>
-                <div className="w-full bg-white/10 h-1.5 rounded-full overflow-hidden">
+                <div className="w-full bg-[#EAE5DC] h-1.5 rounded-full overflow-hidden">
                   <div
-                    className="bg-luxury-gold h-full rounded-full transition-all duration-500"
+                    className="bg-primary-wine h-full rounded-full transition-all duration-500"
                     style={{ width: `${(current.softness / 5) * 100}%` }}
                   />
                 </div>
@@ -183,24 +183,24 @@ export const FabricGuideSection: React.FC = () => {
               {/* Breathability */}
               <div>
                 <div className="flex items-center justify-between text-xs mb-2">
-                  <span className="text-neutral-400 flex items-center gap-1.5">
-                    <Wind size={14} className="text-luxury-gold" /> Airflow &amp; Cooling
+                  <span className="text-neutral-600 flex items-center gap-1.5">
+                    <Wind size={14} className="text-primary-wine" /> Airflow &amp; Cooling
                   </span>
-                  <span className="text-white font-medium">{current.breathability} / 5</span>
+                  <span className="text-neutral-900 font-semibold">{current.breathability} / 5</span>
                 </div>
-                <div className="w-full bg-white/10 h-1.5 rounded-full overflow-hidden">
+                <div className="w-full bg-[#EAE5DC] h-1.5 rounded-full overflow-hidden">
                   <div
-                    className="bg-luxury-gold h-full rounded-full transition-all duration-500"
+                    className="bg-primary-wine h-full rounded-full transition-all duration-500"
                     style={{ width: `${(current.breathability / 5) * 100}%` }}
                   />
                 </div>
               </div>
 
               {/* Purity Guarantee */}
-              <div className="pt-2 border-t border-white/10 flex items-center gap-3">
-                <Shield size={20} className="text-luxury-gold flex-shrink-0" />
-                <div className="text-[11px] text-neutral-400">
-                  <span className="text-white font-medium block">100% Non-Toxic</span>
+              <div className="pt-2 border-t border-[#E8E3DA] flex items-center gap-3">
+                <Shield size={20} className="text-primary-wine flex-shrink-0" />
+                <div className="text-[11px] text-neutral-600">
+                  <span className="text-neutral-900 font-medium block">100% Non-Toxic</span>
                   Tested safe from over 300 harmful chemicals.
                 </div>
               </div>
