@@ -9,8 +9,8 @@ export const FloatingContactBar: React.FC = () => {
   const contactActions = [
     {
       name: 'WhatsApp Us',
-      detail: '+91 83073 69611',
-      href: 'https://wa.me/918307369611?text=Hello%20Jasmine%20Aroma%20Concierge,%20I%20am%20interested%20in%20your%20luxury%20home%20collection.',
+      detail: '+91 90344 11558',
+      href: 'https://wa.me/919034411558?text=Hello%20Jasmine%20Aroma%20Concierge,%20I%20am%20interested%20in%20your%20luxury%20home%20collection.',
       icon: MessageCircle,
       bg: 'bg-[#25D366] text-white hover:bg-[#20ba59]',
       borderColor: 'border-[#25D366]/30',
@@ -18,8 +18,8 @@ export const FloatingContactBar: React.FC = () => {
     },
     {
       name: 'Direct Call',
-      detail: '+91 83073 69611',
-      href: 'tel:+918307369611',
+      detail: '+91 90344 11558',
+      href: 'tel:+919034411558',
       icon: Phone,
       bg: 'bg-neutral-900 text-white hover:bg-primary-wine',
       borderColor: 'border-neutral-800',

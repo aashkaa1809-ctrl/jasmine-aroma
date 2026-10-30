@@ -70,19 +70,19 @@ export const Header: React.FC = () => {
           <div className="flex items-center space-x-4 sm:space-x-5 text-neutral-600">
             {/* Phone Call */}
             <a
-              href="tel:+918307369611"
+              href="tel:+919034411558"
               className="flex items-center gap-1.5 hover:text-primary-wine transition-colors group"
-              title="Call Us: +91 83073 69611"
+              title="Call Us: +91 90344 11558"
             >
               <Phone size={13} className="text-primary-wine" />
               <span className="text-[11.5px] font-medium tracking-wide hidden md:inline">
-                +91 83073 69611
+                +91 90344 11558
               </span>
             </a>
 
             {/* WhatsApp */}
             <a
-              href="https://wa.me/918307369611?text=Hello%20Jasmine%20Aroma%20Concierge,%20I%20would%20like%20to%20inquire%20about%20your%20luxury%20collection."
+              href="https://wa.me/919034411558?text=Hello%20Jasmine%20Aroma%20Concierge,%20I%20would%20like%20to%20inquire%20about%20your%20luxury%20collection."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1 hover:text-emerald-700 transition-colors"
@@ -252,7 +252,7 @@ export const Header: React.FC = () => {
             <div className="flex items-center space-x-3 sm:space-x-5">
               {/* Quick WhatsApp Header Icon */}
               <a
-                href="https://wa.me/918307369611?text=Hello%20Jasmine%20Aroma%20Concierge,%20I%20would%20like%20to%20inquire%20about%20your%20luxury%20collection."
+                href="https://wa.me/919034411558?text=Hello%20Jasmine%20Aroma%20Concierge,%20I%20would%20like%20to%20inquire%20about%20your%20luxury%20collection."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hidden sm:flex text-neutral-700 hover:text-emerald-600 p-2 rounded-full hover:bg-neutral-100 transition-colors"
@@ -263,9 +263,9 @@ export const Header: React.FC = () => {
 
               {/* Quick Call Header Icon */}
               <a
-                href="tel:+918307369611"
+                href="tel:+919034411558"
                 className="hidden sm:flex text-neutral-700 hover:text-primary-wine p-2 rounded-full hover:bg-neutral-100 transition-colors"
-                title="Call Concierge: +91 83073 69611"
+                title="Call Concierge: +91 90344 11558"
               >
                 <Phone size={17} strokeWidth={1.8} className="text-neutral-800" />
               </a>
@@ -445,7 +445,7 @@ export const Header: React.FC = () => {
             <div className="grid grid-cols-2 gap-2 text-xs">
               {/* WhatsApp */}
               <a
-                href="https://wa.me/918307369611?text=Hello%20Jasmine%20Aroma%20Concierge,%20I%20am%20interested%20in%20your%20luxury%20collection."
+                href="https://wa.me/919034411558?text=Hello%20Jasmine%20Aroma%20Concierge,%20I%20am%20interested%20in%20your%20luxury%20collection."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 p-2.5 rounded-md bg-white border border-[#E5E0D8] text-neutral-800 hover:border-emerald-500 hover:text-emerald-700 transition-colors"
@@ -456,7 +456,7 @@ export const Header: React.FC = () => {
 
               {/* Call */}
               <a
-                href="tel:+918307369611"
+                href="tel:+919034411558"
                 className="flex items-center gap-2 p-2.5 rounded-md bg-white border border-[#E5E0D8] text-neutral-800 hover:border-neutral-900 hover:text-neutral-900 transition-colors"
               >
                 <Phone size={15} className="text-neutral-700" />
@@ -485,7 +485,7 @@ export const Header: React.FC = () => {
             </div>
 
             <p className="text-[11px] text-neutral-500 font-sans pt-1">
-              Hotline: +91 83073 69611 &bull; Hours: 10:00 AM - 8:00 PM IST
+              Hotline: +91 90344 11558 &bull; Hours: 10:00 AM - 8:00 PM IST
             </p>
           </div>
         </div>

@@ -71,7 +71,7 @@ export default function RootLayout({
       '@type': 'PostalAddress',
       addressCountry: 'IN'
     },
-    telephone: '+918307369611',
+    telephone: '+919034411558',
     email: 'contact@jasminearoma.in',
     sameAs: [
       'https://www.instagram.com/jasmine.aroma_/?hl=en#'

@@ -103,21 +103,21 @@ export const Footer: React.FC = () => {
               </span>
               <div className="flex items-center gap-3">
                 <a
-                  href="https://wa.me/918307369611?text=Hello%20Jasmine%20Aroma%20Concierge,%20I%20would%20like%20to%20inquire%20about%20your%20products."
+                  href="https://wa.me/919034411558?text=Hello%20Jasmine%20Aroma%20Concierge,%20I%20would%20like%20to%20inquire%20about%20your%20products."
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="WhatsApp Concierge"
                   className="w-9 h-9 rounded-full bg-white border border-[#E8E3DA] flex items-center justify-center text-[#25D366] hover:bg-[#25D366] hover:text-white hover:border-[#25D366] transition-all shadow-sm"
-                  title="WhatsApp: +91 83073 69611"
+                  title="WhatsApp: +91 90344 11558"
                 >
                   <MessageCircle size={16} />
                 </a>
 
                 <a
-                  href="tel:+918307369611"
+                  href="tel:+919034411558"
                   aria-label="Call Concierge"
                   className="w-9 h-9 rounded-full bg-white border border-[#E8E3DA] flex items-center justify-center text-primary-wine hover:bg-primary-wine hover:text-white hover:border-primary-wine transition-all shadow-sm"
-                  title="Call: +91 83073 69611"
+                  title="Call: +91 90344 11558"
                 >
                   <Phone size={15} />
                 </a>
@@ -248,8 +248,8 @@ export const Footer: React.FC = () => {
               </p>
               <p>
                 <span className="text-neutral-900 block font-semibold">Hotline &amp; WhatsApp:</span>
-                <a href="tel:+918307369611" className="hover:text-primary-wine transition-colors">
-                  +91 83073 69611
+                <a href="tel:+919034411558" className="hover:text-primary-wine transition-colors">
+                  +91 90344 11558
                 </a>
               </p>
               <p>
