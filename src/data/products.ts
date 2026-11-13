@@ -124,6 +124,548 @@ export const PRODUCTS: Product[] = [
       certifications: ['GOTS Certified', 'OEKO-TEX Standard 100']
     }
   },
+  {
+    id: 'bs-04',
+    name: 'Pastel Meadow Floral Cotton Bedsheet Set',
+    slug: 'pastel-meadow-floral-cotton-bedsheet-set',
+    category: 'bedsheets',
+    categoryName: 'Luxury Bedsheets',
+    tagline: 'Soft blush & sage blossom bouquets woven on pristine ivory cotton.',
+    description: 'Inspired by spring meadows in full bloom, this luxury bedsheet set features graceful floral sprigs in blush pink, sage green, and honey yellow against a natural ivory base. Soft-washed long-staple cotton guarantees an airy, cloud-soft touch every night.',
+    price: 3499,
+    originalPrice: 4699,
+    rating: 4.9,
+    reviewCount: 84,
+    badge: 'New Season',
+    featured: true,
+    inStock: true,
+    images: [
+      '/assets/products/bedsheet-pastel-meadow-floral.jpg'
+    ],
+    colors: [
+      { name: 'Pastel Meadow', hex: '#E8D3CE', inStock: true },
+      { name: 'Spring Sage', hex: '#9EAA96', inStock: true }
+    ],
+    sizes: [
+      { name: 'Queen Set (90" x 100")', dimensions: '1 Bedsheet + 2 Pillow Covers', price: 3499 },
+      { name: 'King Set (108" x 100")', dimensions: '1 Bedsheet + 2 Pillow Covers', price: 3999 }
+    ],
+    specifications: {
+      material: '100% Super-Combed Glace Cotton',
+      weave: 'Silky Percale Matte Finish',
+      threadCount: '400 Thread Count',
+      certifications: ['OEKO-TEX Standard 100', 'Azo-Free Dyes'],
+      countryOfOrigin: 'Proudly Designed & Crafted in India',
+      careInstructions: [
+        'Machine wash cold, gentle cycle',
+        'Tumble dry low or line dry in the shade',
+        'Warm iron if desired'
+      ]
+    },
+    story: 'A poetic celebration of fresh morning blooms, designed to bring calm tranquility into modern sanctuaries.',
+    highlights: [
+      'Soft pastel botanical floral bouquet print',
+      'Shrink & fade resistant colorfast reactive dyes',
+      'Coordinated pillow covers with neat stitched borders'
+    ]
+  },
+  {
+    id: 'bs-05',
+    name: 'Vintage Royal Botanical Sand Bedsheet Set',
+    slug: 'vintage-royal-botanical-sand-bedsheet-set',
+    category: 'bedsheets',
+    categoryName: 'Luxury Bedsheets',
+    tagline: 'Ornate heritage block-style botanicals on warm sand-toned cotton.',
+    description: 'Featuring timeless royal palmette flourishes and leafy vines on a warm sand background, this set brings regal elegance and old-world grandeur to master suites.',
+    price: 3799,
+    originalPrice: 4999,
+    rating: 4.8,
+    reviewCount: 62,
+    badge: 'Best Seller',
+    featured: true,
+    inStock: true,
+    images: [
+      '/assets/products/bedsheet-vintage-royal-botanical.jpg'
+    ],
+    colors: [
+      { name: 'Royal Sand', hex: '#D5C4A1', inStock: true },
+      { name: 'Warm Terracotta', hex: '#C27D60', inStock: true }
+    ],
+    sizes: [
+      { name: 'Queen Set (90" x 100")', dimensions: '1 Bedsheet + 2 Pillow Covers', price: 3799 },
+      { name: 'King Set (108" x 100")', dimensions: '1 Bedsheet + 2 Pillow Covers', price: 4299 }
+    ],
+    specifications: {
+      material: '100% Long-Staple Pure Cotton',
+      weave: 'Heritage Sateen Weave',
+      threadCount: '450 Thread Count',
+      certifications: ['OEKO-TEX Standard 100'],
+      countryOfOrigin: 'Crafted with master textile artisans in India',
+      careInstructions: [
+        'Machine wash gentle in cold water',
+        'Dry in shade to preserve vibrant vintage pigments',
+        'Warm iron recommended'
+      ]
+    },
+    story: 'Inspired by the royal courtyards of Rajasthan, recreating regal botanical tapestries for comfortable modern living.',
+    highlights: [
+      'Intricate royal heritage motifs',
+      'Breathable natural cotton fiber matrix',
+      'Deep drape with wrinkle-resistant finish'
+    ]
+  },
+  {
+    id: 'bs-06',
+    name: 'Monochrome Geometric Patchwork Bedsheet Set',
+    slug: 'monochrome-geometric-patchwork-bedsheet-set',
+    category: 'bedsheets',
+    categoryName: 'Luxury Bedsheets',
+    tagline: 'Contemporary chevron, grid, and block patterns in modern black & white.',
+    description: 'Bold, chic, and architecturally inspired. This monochrome patchwork bedsheet combines fine stripes, diamond grids, and stylized foliage into a dynamic statement for modern urban bedrooms.',
+    price: 3599,
+    originalPrice: 4799,
+    rating: 4.9,
+    reviewCount: 91,
+    badge: 'New Season',
+    featured: true,
+    inStock: true,
+    images: [
+      '/assets/products/bedsheet-monochrome-geometric-chevron.jpg'
+    ],
+    colors: [
+      { name: 'Monochrome Noir', hex: '#2B2B2B', inStock: true },
+      { name: 'Chalk White', hex: '#F4F4F4', inStock: true }
+    ],
+    sizes: [
+      { name: 'Queen Set (90" x 100")', dimensions: '1 Bedsheet + 2 Pillow Covers', price: 3599 },
+      { name: 'King Set (108" x 100")', dimensions: '1 Bedsheet + 2 Pillow Covers', price: 4099 }
+    ],
+    specifications: {
+      material: '100% Breathable Long-Staple Cotton',
+      weave: 'Smooth Percale Weave',
+      threadCount: '400 Thread Count',
+      certifications: ['OEKO-TEX Certified', 'Eco-Reactive Pigment Print'],
+      countryOfOrigin: 'Made in India',
+      careInstructions: [
+        'Wash with like colors',
+        'Machine wash cold cycle',
+        'Tumble dry low'
+      ]
+    },
+    story: 'Designed for minimalists who appreciate contemporary geometry balanced with the warmth of natural cotton.',
+    highlights: [
+      'Modern Scandinavian-inspired geometric collage',
+      'High-contrast color fastness with zero bleed',
+      'Ultra-crisp and cooling hand-feel'
+    ]
+  },
+  {
+    id: 'bs-07',
+    name: 'Pastel Mosaic Hearts & Tiles Bedsheet Set',
+    slug: 'pastel-mosaic-hearts-and-tiles-bedsheet-set',
+    category: 'bedsheets',
+    categoryName: 'Luxury Bedsheets',
+    tagline: 'Playful pastel geometric tiles with charming heart medallions in blush & cyan.',
+    description: 'Infuse warmth and gentle romance into your bedroom. A delightful mosaic of pastel pink, sky blue, cream, and mustard geometric squares highlighted by tender heart motifs.',
+    price: 3299,
+    originalPrice: 4399,
+    rating: 4.8,
+    reviewCount: 47,
+    badge: 'Cloud Soft',
+    featured: false,
+    inStock: true,
+    images: [
+      '/assets/products/bedsheet-pastel-mosaic-heart.jpg'
+    ],
+    colors: [
+      { name: 'Pastel Blush Mosaic', hex: '#E2B6B6', inStock: true },
+      { name: 'Sky Cyan', hex: '#A8CCD7', inStock: true }
+    ],
+    sizes: [
+      { name: 'Queen Set (90" x 100")', dimensions: '1 Bedsheet + 2 Pillow Covers', price: 3299 },
+      { name: 'King Set (108" x 100")', dimensions: '1 Bedsheet + 2 Pillow Covers', price: 3799 }
+    ],
+    specifications: {
+      material: '100% Super-Soft Brushed Cotton',
+      weave: 'Soft-Touch Percale Weave',
+      threadCount: '400 Thread Count',
+      certifications: ['Skin-Safe OEKO-TEX Standard 100'],
+      countryOfOrigin: 'India',
+      careInstructions: [
+        'Gentle cycle machine wash',
+        'Do not bleach',
+        'Warm iron if needed'
+      ]
+    },
+    story: 'Created to bring joyful whimsy, cozy charm, and peaceful relaxation to every guest room and master suite.',
+    highlights: [
+      'Whimsical heart & tile patchwork',
+      'Cozy brushed cotton finish',
+      'Hypoallergenic and highly breathable'
+    ]
+  },
+  {
+    id: 'bs-08',
+    name: 'Midnight Navy Botanical Blossom Bedsheet Set',
+    slug: 'midnight-navy-botanical-blossom-bedsheet-set',
+    category: 'bedsheets',
+    categoryName: 'Luxury Bedsheets',
+    tagline: 'Rich midnight navy canvas illuminated with coral and ivory flora.',
+    description: 'Deep, dramatic, and luxurious. An enchanting dark indigo navy background adorned with blooming coral roses, cream peonies, and forest foliage for a lavish, moody aesthetic.',
+    price: 3899,
+    originalPrice: 5199,
+    rating: 5.0,
+    reviewCount: 112,
+    badge: 'Signature',
+    featured: true,
+    inStock: true,
+    images: [
+      '/assets/products/bedsheet-midnight-navy-blossom.jpg'
+    ],
+    colors: [
+      { name: 'Midnight Navy', hex: '#1B263B', inStock: true },
+      { name: 'Coral Blossom', hex: '#E07A5F', inStock: true }
+    ],
+    sizes: [
+      { name: 'Queen Set (90" x 100")', dimensions: '1 Bedsheet + 2 Pillow Covers', price: 3899 },
+      { name: 'King Set (108" x 100")', dimensions: '1 Bedsheet + 2 Pillow Covers', price: 4399 },
+      { name: 'Super King Set (114" x 108")', dimensions: '1 Bedsheet + 2 Pillow Covers', price: 4899 }
+    ],
+    specifications: {
+      material: '100% Premium Combed Cotton',
+      weave: 'Lustrous Sateen Weave',
+      threadCount: '500 Thread Count',
+      certifications: ['OEKO-TEX Standard 100', 'Azo-Free Reactive Dyeing'],
+      countryOfOrigin: 'Made in India',
+      careInstructions: [
+        'Machine wash cold inside-out',
+        'Tumble dry low',
+        'Iron on reverse side'
+      ]
+    },
+    story: 'A rich midnight floral inspired by starlit botanical gardens, exuding warmth, intimacy, and hotel-suite elegance.',
+    highlights: [
+      'Rich saturated midnight tones',
+      'Silk-like sateen handfeel',
+      'Fade-proof reactive dye technology'
+    ]
+  },
+  {
+    id: 'bs-09',
+    name: 'Coastal Blue Scallop Fan Botanical Bedsheet Set',
+    slug: 'coastal-blue-scallop-fan-botanical-bedsheet-set',
+    category: 'bedsheets',
+    categoryName: 'Luxury Bedsheets',
+    tagline: 'Serene Mediterranean blues with graceful fan-scallops and leaves.',
+    description: 'Refresh your bed with cool oceanic tranquility. Classic coastal fan motifs intertwined with delicate blue leaves against crisp white cotton create a refreshing seaside retreat in your own home.',
+    price: 3699,
+    originalPrice: 4899,
+    rating: 4.9,
+    reviewCount: 78,
+    badge: 'Best Seller',
+    featured: true,
+    inStock: true,
+    images: [
+      '/assets/products/bedsheet-coastal-blue-scallop-fan.jpg'
+    ],
+    colors: [
+      { name: 'Cerulean Fan', hex: '#2A6F97', inStock: true },
+      { name: 'Ocean Mist', hex: '#89C2D9', inStock: true }
+    ],
+    sizes: [
+      { name: 'Queen Set (90" x 100")', dimensions: '1 Bedsheet + 2 Pillow Covers', price: 3699 },
+      { name: 'King Set (108" x 100")', dimensions: '1 Bedsheet + 2 Pillow Covers', price: 4199 }
+    ],
+    specifications: {
+      material: '100% Long-Staple Cotton',
+      weave: 'Breathable Percale Weave',
+      threadCount: '450 Thread Count',
+      certifications: ['OEKO-TEX Certified'],
+      countryOfOrigin: 'Crafted in India',
+      careInstructions: [
+        'Machine wash cold, gentle cycle',
+        'Line dry in shade',
+        'Medium iron'
+      ]
+    },
+    story: 'Evoking the refreshing ocean breeze and tiled verandas of coastal Greece and the Italian Riviera.',
+    highlights: [
+      'Crisp and cooling touch for year-round ease',
+      'Art Deco scallop & palm botanical fusion',
+      'Generously sized for thick mattresses'
+    ]
+  },
+  {
+    id: 'bs-010',
+    name: 'Earthy Abstract Arches & Mocha Stripes Bedsheet Set',
+    slug: 'earthy-abstract-arches-mocha-stripes-bedsheet-set',
+    category: 'bedsheets',
+    categoryName: 'Luxury Bedsheets',
+    tagline: 'Warm terracotta, cinnamon, and mocha arches with retro geometric flair.',
+    description: 'Bring grounded warmth into your space with mid-century modern bohemian arches, semicircles, and textured neutral striping in tones of terracotta, latte, and warm clay.',
+    price: 3599,
+    originalPrice: 4699,
+    rating: 4.8,
+    reviewCount: 53,
+    badge: 'New Season',
+    featured: false,
+    inStock: true,
+    images: [
+      '/assets/products/bedsheet-earthy-abstract-arches.jpg'
+    ],
+    colors: [
+      { name: 'Terracotta Clay', hex: '#B85D43', inStock: true },
+      { name: 'Mocha Latte', hex: '#9C7A5B', inStock: true }
+    ],
+    sizes: [
+      { name: 'Queen Set (90" x 100")', dimensions: '1 Bedsheet + 2 Pillow Covers', price: 3599 },
+      { name: 'King Set (108" x 100")', dimensions: '1 Bedsheet + 2 Pillow Covers', price: 4099 }
+    ],
+    specifications: {
+      material: '100% Natural Organic Cotton',
+      weave: 'Matte Slub Percale',
+      threadCount: '400 Thread Count',
+      certifications: ['GOTS Certified Organic Fibers', 'OEKO-TEX Standard 100'],
+      countryOfOrigin: 'India',
+      careInstructions: [
+        'Gentle machine wash with mild detergent',
+        'Tumble dry low',
+        'Warm iron'
+      ]
+    },
+    story: 'Designed for grounding serenity, drawing palette inspiration from sunset desert clays and raw ceramic pottery.',
+    highlights: [
+      'Modern abstract arch artwork',
+      '100% natural organic handfeel',
+      'Non-toxic earthy mineral dyes'
+    ]
+  },
+  {
+    id: 'bs-011',
+    name: 'Sapphire Foliage & White Garden Bedsheet Set',
+    slug: 'sapphire-foliage-white-garden-bedsheet-set',
+    category: 'bedsheets',
+    categoryName: 'Luxury Bedsheets',
+    tagline: 'Regal sapphire royal blue backdrop with lush ivory leaf cascades.',
+    description: 'A stunning high-contrast botanical masterpiece. Graceful white fern leaves and trailing branches cascade over deep sapphire blue cotton, giving your bed an oasis-like grandeur.',
+    price: 3799,
+    originalPrice: 4999,
+    rating: 4.9,
+    reviewCount: 88,
+    badge: 'Signature',
+    featured: true,
+    inStock: true,
+    images: [
+      '/assets/products/bedsheet-sapphire-botanical-garden.jpg'
+    ],
+    colors: [
+      { name: 'Sapphire Royal Blue', hex: '#1D3557', inStock: true },
+      { name: 'Porcelain White', hex: '#F1FAEE', inStock: true }
+    ],
+    sizes: [
+      { name: 'Queen Set (90" x 100")', dimensions: '1 Bedsheet + 2 Pillow Covers', price: 3799 },
+      { name: 'King Set (108" x 100")', dimensions: '1 Bedsheet + 2 Pillow Covers', price: 4299 }
+    ],
+    specifications: {
+      material: '100% Combed Compact Cotton',
+      weave: 'Silky Sateen Weave',
+      threadCount: '450 Thread Count',
+      certifications: ['OEKO-TEX Standard 100 Class 1'],
+      countryOfOrigin: 'India',
+      careInstructions: [
+        'Wash in cold water before first use',
+        'Gentle machine wash',
+        'Iron damp'
+      ]
+    },
+    story: 'Celebrates nocturnal flora in palace gardens under the moonlight, radiating quiet luxury and peaceful sleep.',
+    highlights: [
+      'Rich saturated sapphire shade',
+      'Silky smooth hand-feel',
+      'Color-lock technology ensures zero bleeding'
+    ]
+  },
+  {
+    id: 'bs-012',
+    name: 'Nordic Triangle Mosaic Quilt-Style Bedsheet Set',
+    slug: 'nordic-triangle-mosaic-quilt-style-bedsheet-set',
+    category: 'bedsheets',
+    categoryName: 'Luxury Bedsheets',
+    tagline: 'Scandi kaleidoscope triangles in teal, mustard, blush, and slate.',
+    description: 'Fresh Nordic styling with vibrant geometric harmony. Hundreds of delicate multi-tonal triangles form a kaleidoscopic quilt-style pattern that brightens any contemporary bedroom.',
+    price: 3399,
+    originalPrice: 4499,
+    rating: 4.8,
+    reviewCount: 41,
+    badge: 'Cloud Soft',
+    featured: false,
+    inStock: true,
+    images: [
+      '/assets/products/bedsheet-scandi-triangle-mosaic.jpg'
+    ],
+    colors: [
+      { name: 'Nordic Multi', hex: '#457B9D', inStock: true },
+      { name: 'Mustard Ochre', hex: '#E9C46A', inStock: true }
+    ],
+    sizes: [
+      { name: 'Queen Set (90" x 100")', dimensions: '1 Bedsheet + 2 Pillow Covers', price: 3399 },
+      { name: 'King Set (108" x 100")', dimensions: '1 Bedsheet + 2 Pillow Covers', price: 3899 }
+    ],
+    specifications: {
+      material: '100% Pure Fine Cotton',
+      weave: 'Crisp Percale Weave',
+      threadCount: '400 Thread Count',
+      certifications: ['OEKO-TEX Certified'],
+      countryOfOrigin: 'Made in India',
+      careInstructions: [
+        'Machine wash cold',
+        'Tumble dry low',
+        'Warm iron if desired'
+      ]
+    },
+    story: 'A joyful Scandinavian design that celebrates geometry, playful colors, and the simple beauty of everyday rest.',
+    highlights: [
+      'Dynamic geometric triangle layout',
+      'Cool and breathable weave for hot sleepers',
+      'Pill-resistant durable construction'
+    ]
+  },
+  {
+    id: 'bs-013',
+    name: 'Golden Sunflower & Yellow Gingham Bedsheet Set',
+    slug: 'golden-sunflower-yellow-gingham-bedsheet-set',
+    category: 'bedsheets',
+    categoryName: 'Luxury Bedsheets',
+    tagline: 'Radiant blooming sunflowers paired with sunny golden gingham checks.',
+    description: 'Wake up to perpetual sunshine. Vivid yellow sunflowers and cheerful country gingham checks radiate warmth, uplifting optimism, and cottagecore coziness across your bedroom.',
+    price: 3499,
+    originalPrice: 4599,
+    rating: 5.0,
+    reviewCount: 69,
+    badge: 'New Season',
+    featured: true,
+    inStock: true,
+    images: [
+      '/assets/products/bedsheet-sunflower-gingham-gold.jpg'
+    ],
+    colors: [
+      { name: 'Golden Sunflower', hex: '#F4A261', inStock: true },
+      { name: 'Sunny Gingham', hex: '#E76F51', inStock: true }
+    ],
+    sizes: [
+      { name: 'Queen Set (90" x 100")', dimensions: '1 Bedsheet + 2 Pillow Covers', price: 3499 },
+      { name: 'King Set (108" x 100")', dimensions: '1 Bedsheet + 2 Pillow Covers', price: 3999 }
+    ],
+    specifications: {
+      material: '100% Breathable Combed Cotton',
+      weave: 'Soft Percale Finish',
+      threadCount: '400 Thread Count',
+      certifications: ['OEKO-TEX Standard 100'],
+      countryOfOrigin: 'Crafted in India',
+      careInstructions: [
+        'Machine wash warm gentle cycle',
+        'Tumble dry low',
+        'Warm iron'
+      ]
+    },
+    story: 'Inspired by summer sunflower fields in full afternoon sun, created to bring cheerful smiles every morning.',
+    highlights: [
+      'Sunny mood-elevating design',
+      'Double-sided contrast pillow covers',
+      '100% natural and skin-friendly'
+    ]
+  },
+  {
+    id: 'bs-014',
+    name: 'English Rose Garden & Houndstooth Bedsheet Set',
+    slug: 'english-rose-garden-houndstooth-bedsheet-set',
+    category: 'bedsheets',
+    categoryName: 'Luxury Bedsheets',
+    tagline: 'Vintage romantic pink cabbage roses atop subtle houndstooth texture.',
+    description: 'Classic British country cottage elegance. Romantic blushing cabbage roses and leafy vines bloom gracefully over a refined micro-houndstooth textured background.',
+    price: 3699,
+    originalPrice: 4899,
+    rating: 4.9,
+    reviewCount: 95,
+    badge: 'Organic Luxury',
+    featured: true,
+    inStock: true,
+    images: [
+      '/assets/products/bedsheet-english-rose-houndstooth.jpg'
+    ],
+    colors: [
+      { name: 'Blush English Rose', hex: '#DDA15E', inStock: true },
+      { name: 'Rose Petal Pink', hex: '#E8A598', inStock: true }
+    ],
+    sizes: [
+      { name: 'Queen Set (90" x 100")', dimensions: '1 Bedsheet + 2 Pillow Covers', price: 3699 },
+      { name: 'King Set (108" x 100")', dimensions: '1 Bedsheet + 2 Pillow Covers', price: 4199 },
+      { name: 'Super King Set (114" x 108")', dimensions: '1 Bedsheet + 2 Pillow Covers', price: 4699 }
+    ],
+    specifications: {
+      material: '100% Organic Long-Staple Cotton',
+      weave: 'Silky Sateen Weave',
+      threadCount: '450 Thread Count',
+      certifications: ['GOTS Certified Organic', 'OEKO-TEX Standard 100'],
+      countryOfOrigin: 'India',
+      careInstructions: [
+        'Machine wash cold gentle',
+        'Line dry in shade',
+        'Warm iron damp'
+      ]
+    },
+    story: 'A timeless romantic English countryside garden aesthetic brought to life on ultra-soft organic cotton.',
+    highlights: [
+      'Detailed cabbage rose botanicals',
+      'Silky lustrous sateen finish',
+      'Generous flap closure pillow covers'
+    ]
+  },
+  {
+    id: 'bs-015',
+    name: 'Teal Moroccan Damask & Wildflower Bedsheet Set',
+    slug: 'teal-moroccan-damask-wildflower-bedsheet-set',
+    category: 'bedsheets',
+    categoryName: 'Luxury Bedsheets',
+    tagline: 'Rich peacock teal with intricate medallion damask and wild blooms.',
+    description: 'Luxurious, exotic, and captivating. Deep peacock teal adorned with traditional Moroccan arches, ornate damask cartouches, and delicate ivory wildflower clusters.',
+    price: 3899,
+    originalPrice: 5199,
+    rating: 4.9,
+    reviewCount: 83,
+    badge: 'Best Seller',
+    featured: true,
+    inStock: true,
+    images: [
+      '/assets/products/bedsheet-wildflower-moroccan-damask.jpg'
+    ],
+    colors: [
+      { name: 'Peacock Teal', hex: '#1F4E5B', inStock: true },
+      { name: 'Ivory Damask', hex: '#FAF3DD', inStock: true }
+    ],
+    sizes: [
+      { name: 'Queen Set (90" x 100")', dimensions: '1 Bedsheet + 2 Pillow Covers', price: 3899 },
+      { name: 'King Set (108" x 100")', dimensions: '1 Bedsheet + 2 Pillow Covers', price: 4399 }
+    ],
+    specifications: {
+      material: '100% Super-Combed Compact Cotton',
+      weave: 'Lustrous Sateen Weave',
+      threadCount: '500 Thread Count',
+      certifications: ['OEKO-TEX Standard 100 Class 1', 'ISO 9001 Quality'],
+      countryOfOrigin: 'Made in India',
+      careInstructions: [
+        'Machine wash cold gentle cycle',
+        'Do not bleach',
+        'Warm iron on reverse'
+      ]
+    },
+    story: 'Inspired by the vibrant riads of Marrakech, blending exotic architectural damasks with restful botanical serenity.',
+    highlights: [
+      'Rich jewel-toned teal foundation',
+      'Lavish 500 thread count sateen feel',
+      'Durable double-stitched hems'
+    ]
+  },
 
   // Comforters
   {

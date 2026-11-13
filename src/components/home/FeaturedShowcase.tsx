@@ -62,7 +62,7 @@ export const FeaturedShowcase: React.FC = () => {
 
         {/* Product Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-7">
-          {filteredProducts.slice(0, 8).map((product) => (
+          {filteredProducts.slice(0, 12).map((product) => (
             <ProductCard key={product.id} product={product} aspectRatio="portrait" />
           ))}
         </div>
